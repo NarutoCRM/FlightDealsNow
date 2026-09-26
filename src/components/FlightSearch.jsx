@@ -41,15 +41,49 @@ export default function FlightSearch() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState("")
 
-  const submit = e => {
-    e.preventDefault(); setError("")
-    if (!from || !to || !departure || (tripType === "Round Trip" && !returnDate)) return setError("Please complete your flight details.")
-    if (from === to) return setError("Please select different departure and arrival airports.")
-    setLoading(true)
-    setTimeout(() => {
-      navigate("/flight-quote", { state: { tripType, from, to, departure, returnDate, travelers, cabin } })
-    }, 2000)
+  const submit = (e) => {
+  e.preventDefault();
+  setError("");
+
+  if (
+    !from ||
+    !to ||
+    !departure ||
+    (tripType === "Round Trip" && !returnDate)
+  ) {
+    setError("Please complete your flight details.");
+    return;
   }
+
+  if (from === to) {
+    setError("Please select different departure and arrival airports.");
+    return;
+  }
+
+  setLoading(true);
+
+  const flightData = {
+    tripType,
+    from,
+    to,
+    departure,
+    returnDate: tripType === "One Way" ? "" : returnDate,
+    travelers,
+    cabin,
+  };
+
+  setTimeout(() => {
+    try {
+      navigate("/flight-quote", {
+        state: flightData,
+      });
+    } catch (err) {
+      console.error("Flight quote navigation error:", err);
+      setLoading(false);
+      setError("Unable to open the quote page. Please try again.");
+    }
+  }, 2000);
+};
 
   return <section id="flight-search" className="opacity-90 relative mx-auto -mt-20 max-w-6xl px-5 lg:px-8">
     <form onSubmit={submit} className="rounded-[28px] border border-white/60 bg-white/95 p-5 shadow-[0_25px_70px_-30px_rgba(15,23,42,.45)] backdrop-blur-xl sm:p-7">

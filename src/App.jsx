@@ -27,6 +27,7 @@ import CheapFlightsParis from "./components/CheapFlightsParis"
 import CheapFlightsSanFrancisco from "./components/CheapFlightsSanFrancisco"
 import CheapFlightsBoston from "./components/CheapFlightsBoston"
 import ContactUs from "./components/ContactUs"
+import FlightQuote from "./components/FlightQuote";
 
 
 function Layout({ children, floating = true }) {
@@ -108,6 +109,7 @@ function App() {
           }
         />
 
+
         <Route
           path="/cookie-policy"
           element={
@@ -155,6 +157,8 @@ function App() {
         />
 
         <Route path="/contact-us" element={<Layout><ContactUs /></Layout>} />
+
+        <Route path="/flight-quote" element={<Layout><FlightQuote /></Layout>} />
 
         <Route
           path="/cheap-flights-to-san-francisco"
