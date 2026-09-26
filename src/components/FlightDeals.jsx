@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react"
 
 const PHONE_NUMBER = "18669871234"
-const DISPLAY_PHONE = "(855) 750-2715"
+const DISPLAY_PHONE = "(855) 999-9999"
 
 const deals = [
   {
