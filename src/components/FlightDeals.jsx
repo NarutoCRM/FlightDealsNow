@@ -214,7 +214,7 @@ const FlightDeals = () => {
                   key={`contact-${index}`}
                   className="min-w-[270px] snap-start"
                 >
-                  <div className="group relative flex min-h-[340px] h-full overflow-hidden rounded-[28px] border border-cyan-300/20 bg-gradient-to-br from-cyan-400 to-blue-600 p-[1px] shadow-2xl shadow-cyan-500/10 transition-all duration-500 hover:-translate-y-2">
+                  <div className="group relative flex min-h-[400px] h-full overflow-hidden rounded-[28px] border border-cyan-300/20 bg-gradient-to-br from-cyan-400 to-blue-600 p-[1px] shadow-2xl shadow-cyan-500/10 transition-all duration-500 hover:-translate-y-2">
 
                     <div className="relative flex w-full flex-col overflow-hidden rounded-[27px] bg-[#0a2344] p-6">
 
@@ -343,12 +343,12 @@ const FlightDeals = () => {
         </div>
 
         {/* Mobile hint */}
-        <p className="mt-3 text-center text-[11px] text-white/30 sm:hidden">
+        <p className="mt-1 text-center text-[11px] text-white/30 sm:hidden">
           Swipe left or right to explore destinations →
         </p>
 
         {/* Bottom note */}
-        <div className="mt-8 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-center sm:flex-row sm:text-left">
+        <div className="mt-1 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-center sm:flex-row sm:text-left">
           <p className="text-xs text-white/35">
             Fares and availability may change. Contact our travel team for
             current options.

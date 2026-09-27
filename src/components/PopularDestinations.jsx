@@ -66,7 +66,7 @@ export default function PopularDestinations() {
         {/* Section intro */}
         <div className="mb-12 flex flex-col gap-7 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-2xl">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-cyan-200 backdrop-blur-md">
+            <div className="mb- inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-cyan-200 backdrop-blur-md">
               <span className="h-2 w-2 rounded-full bg-cyan-300" />
               Where will you fly next?
             </div>
@@ -99,18 +99,16 @@ export default function PopularDestinations() {
             <a
               key={destination.name}
               href={destination.link}
-              className={`group relative overflow-hidden rounded-[28px] border border-white/10 bg-white/5 shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-cyan-300/40 hover:shadow-cyan-950/40 ${
-                index === 0 || index === 3
+              className={`group relative overflow-hidden rounded-[28px] border border-white/10 bg-white/5 shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-cyan-300/40 hover:shadow-cyan-950/40 ${index === 0 || index === 3
                   ? "lg:col-span-7"
                   : "lg:col-span-5"
-              }`}
+                }`}
             >
               <div
-                className={`relative overflow-hidden ${
-                  index === 0 || index === 3
+                className={`relative overflow-hidden ${index === 0 || index === 3
                     ? "h-[360px] sm:h-[400px]"
                     : "h-[300px] sm:h-[340px]"
-                }`}
+                  }`}
               >
                 <img
                   src={destination.image}
