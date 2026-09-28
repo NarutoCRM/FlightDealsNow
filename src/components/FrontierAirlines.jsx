@@ -46,8 +46,8 @@ const faqs = [
         a: "Yes. Submit your travel details through the search flow to continue to the quote request.",
     },
     {
-        q: "Is FlightsDealNow the official Frontier Airlines website?",
-        a: "No. FlightsDealNow is an independent travel website for flight search and quote requests.",
+        q: "Is FlightDealsNow the official Frontier Airlines website?",
+        a: "No. FlightDealsNow is an independent travel website for flight search and quote requests.",
     },
 ];
 
@@ -84,7 +84,7 @@ export default function FrontierAirlines() {
                             <p className="mt-7 max-w-xl text-base leading-8 text-slate-300 sm:text-lg">
                                 Search Frontier Airlines flight options and provide your
                                 travel requirements to request a personalized quote through
-                                FlightsDealNow.
+                                FlightDealsNow.
                             </p>
 
                             <div className="mt-8 grid max-w-lg grid-cols-3 gap-3">

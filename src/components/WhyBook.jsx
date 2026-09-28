@@ -43,7 +43,7 @@ const WhyBook = () => {
         <div className="mb-14 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-2xl">
             <span className="inline-flex items-center rounded-full border border-blue-100 bg-blue-50 px-4 py-2 text-xs font-extrabold uppercase tracking-[0.18em] text-blue-700">
-              The FlightsDealNow difference
+              The FlightDealsNow difference
             </span>
 
             <h2 className="mt-5 text-4xl font-black tracking-tight text-slate-950 sm:text-5xl">
@@ -73,60 +73,54 @@ const WhyBook = () => {
           {features.map((feature, index) => (
             <article
               key={feature.title}
-              className={`group relative overflow-hidden rounded-[26px] border p-7 transition-all duration-500 hover:-translate-y-2 ${
-                index === 0 || index === 4
+              className={`group relative overflow-hidden rounded-[26px] border p-7 transition-all duration-500 hover:-translate-y-2 ${index === 0 || index === 4
                   ? "border-blue-100 bg-[#071a33] text-white hover:shadow-2xl hover:shadow-blue-950/20"
                   : "border-slate-200 bg-slate-50 text-slate-950 hover:border-cyan-200 hover:bg-white hover:shadow-xl"
-              }`}
+                }`}
             >
               {/* Number */}
               <div
-                className={`flex h-11 w-11 items-center justify-center rounded-xl text-xs font-black tracking-wider ${
-                  index === 0 || index === 4
+                className={`flex h-11 w-11 items-center justify-center rounded-xl text-xs font-black tracking-wider ${index === 0 || index === 4
                     ? "bg-cyan-300 text-[#071a33]"
                     : "bg-white text-blue-600 shadow-sm ring-1 ring-slate-200"
-                }`}
+                  }`}
               >
                 {feature.number}
               </div>
 
               {/* Decorative line */}
               <div
-                className={`mt-7 h-px w-14 transition-all duration-500 group-hover:w-24 ${
-                  index === 0 || index === 4
+                className={`mt-7 h-px w-14 transition-all duration-500 group-hover:w-24 ${index === 0 || index === 4
                     ? "bg-cyan-300"
                     : "bg-blue-500"
-                }`}
+                  }`}
               />
 
               <h3
-                className={`mt-6 text-xl font-extrabold tracking-tight ${
-                  index === 0 || index === 4
+                className={`mt-6 text-xl font-extrabold tracking-tight ${index === 0 || index === 4
                     ? "text-white"
                     : "text-slate-950"
-                }`}
+                  }`}
               >
                 {feature.title}
               </h3>
 
               <p
-                className={`mt-3 text-sm leading-6 ${
-                  index === 0 || index === 4
+                className={`mt-3 text-sm leading-6 ${index === 0 || index === 4
                     ? "text-slate-300"
                     : "text-slate-600"
-                }`}
+                  }`}
               >
                 {feature.text}
               </p>
 
               <div
-                className={`mt-7 flex items-center gap-2 text-xs font-extrabold uppercase tracking-widest ${
-                  index === 0 || index === 4
+                className={`mt-7 flex items-center gap-2 text-xs font-extrabold uppercase tracking-widest ${index === 0 || index === 4
                     ? "text-cyan-300"
                     : "text-blue-600"
-                }`}
+                  }`}
               >
-                <span>FlightsDealNow</span>
+                <span>FlightDealsNow</span>
                 <span className="transition-transform duration-300 group-hover:translate-x-2">
                   →
                 </span>
@@ -134,11 +128,10 @@ const WhyBook = () => {
 
               {/* Hover glow */}
               <div
-                className={`pointer-events-none absolute -bottom-16 -right-16 h-36 w-36 rounded-full blur-3xl transition-opacity duration-500 group-hover:opacity-100 ${
-                  index === 0 || index === 4
+                className={`pointer-events-none absolute -bottom-16 -right-16 h-36 w-36 rounded-full blur-3xl transition-opacity duration-500 group-hover:opacity-100 ${index === 0 || index === 4
                     ? "bg-cyan-300/20"
                     : "bg-blue-400/10"
-                }`}
+                  }`}
               />
             </article>
           ))}
@@ -151,7 +144,7 @@ const WhyBook = () => {
               Ready to plan your next trip?
             </p>
             <p className="mt-1 text-sm text-slate-600">
-              Start with your route and let FlightsDealNow help with the next step.
+              Start with your route and let FlightDealsNow help with the next step.
             </p>
           </div>
 

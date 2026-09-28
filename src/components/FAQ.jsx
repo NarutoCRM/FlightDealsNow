@@ -2,7 +2,7 @@ import { useState } from "react"
 
 const faqs = [
     {
-        question: "How do I search for a flight on FlightsDealNow?",
+        question: "How do I search for a flight on FlightDealsNow?",
         answer:
             "Enter your departure airport, destination, travel dates, travelers, and cabin class in the flight search form. Select the options that match your trip and continue to request your flight quote.",
     },
@@ -22,9 +22,9 @@ const faqs = [
             "Yes. If you need help comparing your travel options, you can submit a quote request or contact our travel team directly.",
     },
     {
-        question: "How can I contact FlightsDealNow?",
+        question: "How can I contact FlightDealsNow?",
         answer:
-            "You can reach our travel team by phone at (888) 348-7083. Our team can help with questions about your flight search and travel request.",
+            "You can reach our travel team by phone at +1-888-348-7083. Our team can help with questions about your flight search and travel request.",
     },
     {
         question: "Can I get help with my complete travel plans?",
@@ -96,10 +96,10 @@ const FAQ = () => {
                         </p>
 
                         <a
-                            href="tel:1(888) 348-7083"
+                            href="tel:1+1-888-348-7083"
                             className="mt-3 block text-xl font-black text-cyan-300 transition hover:text-white"
                         >
-                            (888) 348-7083
+                            +1-888-348-7083
                         </a>
 
                         <p className="mt-2 text-xs leading-5 text-slate-400">

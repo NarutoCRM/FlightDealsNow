@@ -26,7 +26,7 @@ export default function SouthwestAirlines() {
             <p className="mt-6 max-w-2xl text-base leading-7 text-slate-300 sm:text-lg">
               Explore Southwest Airlines flight options and submit your travel
               details to receive a personalized flight quote through
-              FlightsDealNow.
+              FlightDealsNow.
             </p>
           </div>
 
@@ -51,7 +51,7 @@ export default function SouthwestAirlines() {
           </p>
 
           <p className="mt-4 text-base leading-8 text-slate-600">
-            FlightsDealNow helps you organize your travel requirements before
+            FlightDealsNow helps you organize your travel requirements before
             requesting a personalized flight quote.
           </p>
         </div>
@@ -162,7 +162,7 @@ export default function SouthwestAirlines() {
               "Can I search for round-trip flights?",
               "Can I choose my cabin class?",
               "Can I request help with my Southwest flight?",
-              "Is FlightsDealNow the official Southwest website?",
+              "Is FlightDealsNow the official Southwest website?",
             ].map((question, index) => (
               <details
                 key={index}
@@ -176,7 +176,7 @@ export default function SouthwestAirlines() {
                 </summary>
 
                 <p className="mt-4 border-t border-slate-100 pt-4 text-sm leading-7 text-slate-600">
-                  FlightsDealNow provides a flight search and quote-request
+                  FlightDealsNow provides a flight search and quote-request
                   experience. Enter your travel requirements above to request
                   assistance with your trip.
                 </p>
@@ -200,7 +200,7 @@ export default function SouthwestAirlines() {
 
           <p className="mx-auto mt-5 max-w-2xl leading-7 text-slate-300">
             Enter your travel requirements and request a personalized quote
-            through FlightsDealNow.
+            through FlightDealsNow.
           </p>
 
           <button

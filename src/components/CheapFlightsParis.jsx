@@ -37,9 +37,9 @@ const faqs = [
       "Yes. Comparing both airports can give you additional flight choices. Also consider transportation from the airport to your accommodation before selecting your itinerary.",
   },
   {
-    question: "Why search for Paris flights with FlightsDealNow?",
+    question: "Why search for Paris flights with FlightDealsNow?",
     answer:
-      "FlightsDealNow provides a convenient way to explore available flight options and compare itineraries based on your travel dates, preferences, and budget.",
+      "FlightDealsNow provides a convenient way to explore available flight options and compare itineraries based on your travel dates, preferences, and budget.",
   },
 ]
 
@@ -126,7 +126,7 @@ function CheapFlightsParis() {
 
             <div className="inline-flex items-center gap-2 rounded-full border border-cyan-300/30 bg-white/10 px-4 py-2 text-sm font-bold text-cyan-200 backdrop-blur-md">
               <span className="h-2 w-2 rounded-full bg-cyan-300" />
-              FlightsDealNow · Paris
+              FlightDealsNow · Paris
             </div>
 
             <h1 className="mt-7 text-5xl font-black leading-[1.03] tracking-tight text-white sm:text-6xl lg:text-7xl">
@@ -215,7 +215,7 @@ function CheapFlightsParis() {
             </p>
 
             <p className="mt-5 text-lg leading-8 text-slate-600">
-              FlightsDealNow helps you explore available flights to Paris and
+              FlightDealsNow helps you explore available flights to Paris and
               compare options based on your travel dates, schedule, and budget.
               You can look at one-way and round-trip itineraries and select an
               option that works for your plans.
@@ -351,7 +351,7 @@ function CheapFlightsParis() {
             </p>
 
             <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-300">
-              FlightsDealNow gives you a convenient way to explore available
+              FlightDealsNow gives you a convenient way to explore available
               flights and compare different options for your Paris trip.
             </p>
 
@@ -683,11 +683,10 @@ function CheapFlightsParis() {
               return (
                 <div
                   key={faq.question}
-                  className={`overflow-hidden rounded-2xl border transition ${
-                    isOpen
+                  className={`overflow-hidden rounded-2xl border transition ${isOpen
                       ? "border-cyan-300 bg-[#f7fafc] shadow-sm"
                       : "border-slate-200 bg-white"
-                  }`}
+                    }`}
                 >
 
                   <button
@@ -711,9 +710,8 @@ function CheapFlightsParis() {
                     </div>
 
                     <span
-                      className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-cyan-50 text-xl font-bold text-blue-600 transition-transform ${
-                        isOpen ? "rotate-45" : ""
-                      }`}
+                      className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-cyan-50 text-xl font-bold text-blue-600 transition-transform ${isOpen ? "rotate-45" : ""
+                        }`}
                     >
                       +
                     </span>

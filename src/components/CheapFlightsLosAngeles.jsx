@@ -17,7 +17,7 @@ export default function CheapFlightsLasVegas() {
         {
             question: "Can I get help planning my Las Vegas trip?",
             answer:
-                "Yes. You can contact the FlightsDealNow travel team for assistance with available flight options and general travel planning questions.",
+                "Yes. You can contact the FlightDealsNow travel team for assistance with available flight options and general travel planning questions.",
         },
         {
             question: "Do flight prices and availability stay the same?",
@@ -167,7 +167,7 @@ export default function CheapFlightsLasVegas() {
                         </p>
 
                         <p className="mt-5 text-base leading-8 text-slate-600">
-                            FlightsDealNow helps you start your trip by exploring
+                            FlightDealsNow helps you start your trip by exploring
                             available flight options and connecting with travel
                             assistance when you need help with your plans.
                         </p>
@@ -352,12 +352,12 @@ export default function CheapFlightsLasVegas() {
                                 <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-300">
                                     If you have questions about available flight
                                     options or your travel plans, you can connect
-                                    with the FlightsDealNow travel team.
+                                    with the FlightDealsNow travel team.
                                 </p>
                             </div>
 
                             <a
-                                href="tel:(888) 348-7083"
+                                href="tel:+1-888-348-7083"
                                 className="inline-flex items-center justify-center rounded-2xl bg-cyan-300 px-7 py-4 font-black text-[#071a33] transition hover:-translate-y-1 hover:bg-cyan-200"
                             >
                                 ☎ Talk to a Travel Expert
@@ -483,7 +483,7 @@ export default function CheapFlightsLasVegas() {
                                 </a>
 
                                 <a
-                                    href="tel:(888) 348-7083"
+                                    href="tel:+1-888-348-7083"
                                     className="rounded-2xl border border-white/20 bg-white/5 px-7 py-4 font-bold text-white transition hover:bg-white/10"
                                 >
                                     Call a Travel Expert

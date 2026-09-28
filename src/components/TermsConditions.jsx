@@ -6,7 +6,7 @@ const TermsConditions = () => {
             <section className="bg-gradient-to-r from-[#062b5c] to-[#1687d9]">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-16">
                     <p className="text-sm font-semibold text-white/70 mb-2">
-                        flightsdealnow
+                        FlightDealsNow
                     </p>
 
                     <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white">
@@ -27,15 +27,15 @@ const TermsConditions = () => {
                     <div className="space-y-5 text-gray-600 text-sm sm:text-base leading-7">
 
                         <p>
-                            Welcome to flightsdealnow. These Terms & Conditions
+                            Welcome to FlightDealsNow. These Terms & Conditions
                             (“Terms,” “Terms and Conditions,” or “Agreement”) govern
-                            your access to and use of the flightsdealnow website and
+                            your access to and use of the FlightDealsNow website and
                             any travel-related assistance made available through it.
                         </p>
 
                         <p>
-                            flightsdealnow is operated by TravelFirst LLC
-                            (“TravelFirst LLC,” “flightsdealnow,” “we,” “us,” or “our”).
+                            FlightDealsNow is operated by TravelFirst LLC
+                            (“TravelFirst LLC,” “FlightDealsNow,” “we,” “us,” or “our”).
                             By accessing or using our website, submitting an inquiry,
                             requesting travel assistance, or using any information or
                             services available through the website, you agree to be
@@ -46,23 +46,23 @@ const TermsConditions = () => {
                     </div>
 
                     {/* 1 */}
-                    <TermsSection title="1. About flightsdealnow">
+                    <TermsSection title="1. About FlightDealsNow">
                         <p>
-                            flightsdealnow is a travel website operated by TravelFirst LLC
+                            FlightDealsNow is a travel website operated by TravelFirst LLC
                             that provides users with access to travel information, flight
                             search assistance, booking-related support, and other
                             travel-related resources.
                         </p>
 
                         <p>
-                            Depending on the service requested, flightsdealnow may assist
+                            Depending on the service requested, FlightDealsNow may assist
                             customers in locating available travel options and facilitating
                             reservations with airlines, travel suppliers, or other
                             third-party providers.
                         </p>
 
                         <p>
-                            flightsdealnow is not an airline and does not operate aircraft
+                            FlightDealsNow is not an airline and does not operate aircraft
                             or control airline schedules, routes, fares, seat availability,
                             baggage policies, or other airline-specific conditions.
                         </p>
@@ -71,7 +71,7 @@ const TermsConditions = () => {
                     {/* 2 */}
                     <TermsSection title="2. Use of the Website">
                         <p>
-                            You agree to use flightsdealnow only for lawful purposes and in
+                            You agree to use FlightDealsNow only for lawful purposes and in
                             accordance with these Terms.
                         </p>
 
@@ -102,7 +102,7 @@ const TermsConditions = () => {
                     <TermsSection title="3. Travel Information & Availability">
                         <p>
                             Travel information displayed on or communicated through
-                            flightsdealnow may include information relating to flight
+                            FlightDealsNow may include information relating to flight
                             schedules, fares, destinations, availability, baggage
                             allowances, restrictions, and other travel details.
                         </p>
@@ -129,7 +129,7 @@ const TermsConditions = () => {
                     {/* 4 */}
                     <TermsSection title="4. Flight Bookings">
                         <p>
-                            When you request a flight booking through flightsdealnow,
+                            When you request a flight booking through FlightDealsNow,
                             certain traveler information may be required to process the
                             reservation.
                         </p>
@@ -170,7 +170,7 @@ const TermsConditions = () => {
                         </p>
 
                         <p>
-                            flightsdealnow does not control the policies or operations of
+                            FlightDealsNow does not control the policies or operations of
                             independent airlines or other travel suppliers. Customers are
                             responsible for reviewing applicable supplier terms before
                             completing a transaction.
@@ -191,7 +191,7 @@ const TermsConditions = () => {
                         </p>
 
                         <p>
-                            Any price presented through flightsdealnow is subject to
+                            Any price presented through FlightDealsNow is subject to
                             availability and confirmation. The final price may differ
                             from an earlier displayed or quoted amount if the underlying
                             travel option is no longer available or if applicable taxes,
@@ -246,7 +246,7 @@ const TermsConditions = () => {
 
                         <p>
                             If you need to change or cancel a reservation, contact
-                            flightsdealnow as soon as possible. We will provide assistance
+                            FlightDealsNow as soon as possible. We will provide assistance
                             based on the applicable booking conditions.
                         </p>
 
@@ -283,7 +283,7 @@ const TermsConditions = () => {
                         </p>
 
                         <p>
-                            flightsdealnow does not guarantee that a traveler will be
+                            FlightDealsNow does not guarantee that a traveler will be
                             permitted to enter, transit through, or depart from any
                             country or destination.
                         </p>
@@ -293,7 +293,7 @@ const TermsConditions = () => {
                     <TermsSection title="10. Content Provided On Our Website">
                         <p>
                             We make reasonable efforts to provide useful and accurate
-                            information on flightsdealnow. However, we do not guarantee
+                            information on FlightDealsNow. However, we do not guarantee
                             that all website content will always be complete, current,
                             accurate, or free from errors.
                         </p>
@@ -313,7 +313,7 @@ const TermsConditions = () => {
                     {/* 11 */}
                     <TermsSection title="11. Intellectual Property">
                         <p>
-                            Unless otherwise stated, content appearing on flightsdealnow,
+                            Unless otherwise stated, content appearing on FlightDealsNow,
                             including text, graphics, logos, designs, images, layouts,
                             and other materials, is owned by or licensed to TravelFirst
                             LLC and may be protected by applicable intellectual property
@@ -331,7 +331,7 @@ const TermsConditions = () => {
                     {/* 12 */}
                     <TermsSection title="12. Links To Third-Party Websites">
                         <p>
-                            flightsdealnow may contain links or references to third-party
+                            FlightDealsNow may contain links or references to third-party
                             websites and services.
                         </p>
 
@@ -352,7 +352,7 @@ const TermsConditions = () => {
                     <TermsSection title="13. Limitation of Liability">
                         <p>
                             To the extent permitted by applicable law, TravelFirst LLC
-                            and flightsdealnow are not responsible for losses or damages
+                            and FlightDealsNow are not responsible for losses or damages
                             arising from circumstances outside our reasonable control,
                             including airline schedule changes, delays, cancellations,
                             overbooking, weather conditions, government restrictions,
@@ -378,7 +378,7 @@ const TermsConditions = () => {
                     <TermsSection title="14. Indemnification">
                         <p>
                             To the extent permitted by law, you agree to defend,
-                            indemnify, and hold harmless TravelFirst LLC, flightsdealnow,
+                            indemnify, and hold harmless TravelFirst LLC, FlightDealsNow,
                             and their respective officers, employees, contractors, and
                             service providers from claims, liabilities, damages, losses,
                             costs, and expenses arising from your misuse of the website,
@@ -390,7 +390,7 @@ const TermsConditions = () => {
                     {/* 15 */}
                     <TermsSection title="15. Privacy">
                         <p>
-                            Your use of flightsdealnow is also subject to our Privacy
+                            Your use of FlightDealsNow is also subject to our Privacy
                             Policy, which explains how we collect, use, disclose, and
                             protect personal information.
                         </p>
@@ -411,7 +411,7 @@ const TermsConditions = () => {
 
                         <p>
                             Updated Terms will be posted on this page with a revised
-                            Effective Date. Your continued use of flightsdealnow after
+                            Effective Date. Your continued use of FlightDealsNow after
                             changes are posted constitutes acceptance of the updated
                             Terms, to the extent permitted by applicable law.
                         </p>
@@ -428,7 +428,7 @@ const TermsConditions = () => {
 
                         <p>
                             Any dispute arising from or relating to these Terms or your
-                            use of flightsdealnow shall be handled in a court of competent
+                            use of FlightDealsNow shall be handled in a court of competent
                             jurisdiction, subject to applicable law.
                         </p>
                     </TermsSection>
@@ -466,10 +466,10 @@ const TermsConditions = () => {
                                     Email:
                                 </strong>{" "}
                                 <a
-                                    href="mailto:contact@flightsdealnow.com"
+                                    href="mailto:support@flightdealsnow.com"
                                     className="text-[#1687d9] hover:underline"
                                 >
-                                    contact@flightsdealnow.com
+                                    support@flightdealsnow.com
                                 </a>
                             </p>
 
@@ -478,10 +478,10 @@ const TermsConditions = () => {
                                     Phone:
                                 </strong>{" "}
                                 <a
-                                    href="tel:(888) 348-7083"
+                                    href="tel:+1-888-348-7083"
                                     className="text-[#1687d9] hover:underline"
                                 >
-                                    (888) 348-7083
+                                    +1-888-348-7083
                                 </a>
                             </p>
 
@@ -493,7 +493,7 @@ const TermsConditions = () => {
                     <div className="mt-10 rounded-2xl bg-gradient-to-r from-[#123b7a] to-[#1687d9] p-6 sm:p-8 text-white">
 
                         <p className="text-sm sm:text-base leading-7">
-                            By using flightsdealnow, you acknowledge that you have read,
+                            By using FlightDealsNow, you acknowledge that you have read,
                             understood, and agreed to these Terms & Conditions.
                         </p>
 

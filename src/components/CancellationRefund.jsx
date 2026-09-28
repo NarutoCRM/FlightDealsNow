@@ -20,7 +20,7 @@ const CancellationRefund = () => {
 
                         <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-2 text-xs font-bold uppercase tracking-widest text-cyan-200">
                             <span className="h-2 w-2 rounded-full bg-cyan-300" />
-                            FlightsDealNow
+                            FlightDealsNow
                         </div>
 
                         <h1 className="text-4xl font-extrabold leading-tight text-white sm:text-5xl">
@@ -74,7 +74,7 @@ const CancellationRefund = () => {
                         <div className="space-y-5 text-sm leading-7 text-gray-600 sm:text-base">
 
                             <p>
-                                At flightsdealnow, operated by TravelFirst LLC,
+                                At FlightDealsNow, operated by TravelFirst LLC,
                                 we understand that travel plans may change
                                 unexpectedly. Our goal is to make the
                                 cancellation and refund process as clear as
@@ -90,7 +90,7 @@ const CancellationRefund = () => {
                             </p>
 
                             <p>
-                                flightsdealnow acts as a travel service provider
+                                FlightDealsNow acts as a travel service provider
                                 and assists customers with cancellation and
                                 refund requests. We do not independently
                                 determine airline refund eligibility or
@@ -108,9 +108,9 @@ const CancellationRefund = () => {
                             items={[
                                 "Flight tickets may be refundable, partially refundable, or non-refundable depending on the airline, fare type, route, and terms applicable to the booking.",
                                 "Any refund will be processed according to the fare rules and cancellation policy of the airline or travel supplier.",
-                                "flightsdealnow does not guarantee that a cancellation request will result in a refund.",
+                                "FlightDealsNow does not guarantee that a cancellation request will result in a refund.",
                                 "Airline penalties, fare differences, taxes, supplier charges, and other applicable fees may affect the final refundable amount.",
-                                "Any service or processing fees charged by flightsdealnow may be non-refundable, where permitted by applicable law and the terms disclosed at the time of booking.",
+                                "Any service or processing fees charged by FlightDealsNow may be non-refundable, where permitted by applicable law and the terms disclosed at the time of booking.",
                                 "Refund eligibility and the amount of any approved refund are determined based on the specific reservation and applicable airline rules.",
                             ]}
                         />
@@ -123,7 +123,7 @@ const CancellationRefund = () => {
 
                         <p>
                             Customers who need to cancel a reservation should
-                            contact the flightsdealnow customer support team as
+                            contact the FlightDealsNow customer support team as
                             soon as possible.
                         </p>
 
@@ -196,7 +196,7 @@ const CancellationRefund = () => {
                         </p>
 
                         <p>
-                            Customers should contact flightsdealnow promptly
+                            Customers should contact FlightDealsNow promptly
                             after booking if they wish to cancel within this
                             period. We will review the applicable booking
                             conditions and advise whether a cancellation or
@@ -237,7 +237,7 @@ const CancellationRefund = () => {
                         </p>
 
                         <p>
-                            flightsdealnow cannot guarantee a particular refund
+                            FlightDealsNow cannot guarantee a particular refund
                             amount before the airline or relevant supplier has
                             reviewed the request.
                         </p>
@@ -250,7 +250,7 @@ const CancellationRefund = () => {
 
                         <p>
                             Once a cancellation and refund request is received,
-                            flightsdealnow may review the reservation and submit
+                            FlightDealsNow may review the reservation and submit
                             the eligible request to the applicable airline or
                             travel supplier.
                         </p>
@@ -279,7 +279,7 @@ const CancellationRefund = () => {
 
                         <p>
                             Because airlines and payment providers control
-                            different stages of the process, flightsdealnow
+                            different stages of the process, FlightDealsNow
                             cannot guarantee a specific refund timeframe.
                         </p>
 
@@ -306,7 +306,7 @@ const CancellationRefund = () => {
                         <p>
                             Customers should understand that delays caused by an
                             airline, bank, credit-card company, payment processor,
-                            or other third party may be outside flightsdealnow's
+                            or other third party may be outside FlightDealsNow's
                             control.
                         </p>
 
@@ -325,7 +325,7 @@ const CancellationRefund = () => {
                         <p>
                             Certain bookings may include service, booking,
                             processing, administrative, or other fees charged by
-                            flightsdealnow.
+                            FlightDealsNow.
                         </p>
 
                         <p>
@@ -369,7 +369,7 @@ const CancellationRefund = () => {
                         />
 
                         <p>
-                            flightsdealnow can assist customers in communicating
+                            FlightDealsNow can assist customers in communicating
                             with the applicable airline or reviewing the
                             available options. However, the airline or travel
                             supplier generally determines the applicable
@@ -391,7 +391,7 @@ const CancellationRefund = () => {
                         <p>
                             These may include airline change fees, fare
                             differences, taxes, supplier charges, or applicable
-                            flightsdealnow service fees.
+                            FlightDealsNow service fees.
                         </p>
 
                         <p>
@@ -446,7 +446,7 @@ const CancellationRefund = () => {
 
                         <p>
                             Customers who know they cannot travel should contact
-                            flightsdealnow before the scheduled departure time.
+                            FlightDealsNow before the scheduled departure time.
                         </p>
 
                     </PolicySection>
@@ -483,7 +483,7 @@ const CancellationRefund = () => {
                                 "Submitting a cancellation request does not automatically guarantee a refund.",
                                 "Airlines have the authority to determine whether a particular ticket qualifies for a refund under its applicable fare rules.",
                                 "Refund amounts may be reduced by applicable penalties, fees, or other charges.",
-                                "flightsdealnow cannot guarantee a particular refund amount or processing time.",
+                                "FlightDealsNow cannot guarantee a particular refund amount or processing time.",
                                 "Airline policies and fare conditions may change without prior notice.",
                                 "Customers should review their ticket conditions and contact us as early as possible when they need to cancel or change a reservation.",
                             ]}
@@ -497,14 +497,14 @@ const CancellationRefund = () => {
 
                         <p>
                             If you need to request a cancellation, change, or
-                            refund review, please contact flightsdealnow:
+                            refund review, please contact FlightDealsNow:
                         </p>
 
                         <div className="mt-6 overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
 
                             <div className="border-b border-gray-100 bg-[#071a33] px-5 py-4">
                                 <p className="text-xs font-bold uppercase tracking-widest text-cyan-300">
-                                    FlightsDealNow Support
+                                    FlightDealsNow Support
                                 </p>
 
                                 <p className="mt-1 text-sm text-white/60">
@@ -532,10 +532,10 @@ const CancellationRefund = () => {
                                     </p>
 
                                     <a
-                                        href="mailto:contact@flightsdealnow.com"
+                                        href="mailto:support@flightdealsnow.com"
                                         className="mt-1 inline-block font-semibold text-blue-600 hover:text-cyan-600 hover:underline"
                                     >
-                                        contact@flightsdealnow.com
+                                        support@flightdealsnow.com
                                     </a>
                                 </div>
 
@@ -545,10 +545,10 @@ const CancellationRefund = () => {
                                     </p>
 
                                     <a
-                                        href="tel:(888) 348-7083"
+                                        href="tel:+1-888-348-7083"
                                         className="mt-1 inline-block font-semibold text-blue-600 hover:text-cyan-600"
                                     >
-                                        (888) 348-7083
+                                        +1-888-348-7083
                                     </a>
                                 </div>
 
@@ -576,12 +576,12 @@ const CancellationRefund = () => {
                         </p>
 
                         <p>
-                            Any updated version will be posted on flightsdealnow
+                            Any updated version will be posted on FlightDealsNow
                             and will include a revised effective date.
                         </p>
 
                         <p>
-                            By using flightsdealnow or requesting travel services
+                            By using FlightDealsNow or requesting travel services
                             through us, you acknowledge that cancellations,
                             changes, and refunds are subject to the applicable
                             airline and travel supplier rules.
@@ -616,10 +616,10 @@ const CancellationRefund = () => {
                             </p>
 
                             <a
-                                href="tel:(888) 348-7083"
+                                href="tel:+1-888-348-7083"
                                 className="mt-6 inline-flex items-center justify-center gap-2 rounded-xl bg-cyan-300 px-6 py-3.5 text-sm font-extrabold text-[#071a33] transition-all duration-300 hover:-translate-y-1 hover:bg-cyan-200"
                             >
-                                ☎ Call (888) 348-7083
+                                ☎ Call +1-888-348-7083
                             </a>
 
                         </div>

@@ -1,7 +1,7 @@
 import React from "react"
 
-const PHONE_NUMBER = "(888) 348-7083"
-const DISPLAY_PHONE = "(888) 348-7083"
+const PHONE_NUMBER = "+1-888-348-7083"
+const DISPLAY_PHONE = "+1-888-348-7083"
 
 const Section = ({ number, title, children }) => (
   <section className="mb-10">
@@ -35,7 +35,7 @@ function Disclaimer() {
 
         <div className="relative mx-auto max-w-5xl px-5 text-center sm:px-6">
           <span className="mb-4 inline-block rounded-full bg-blue-500/20 px-4 py-2 text-sm font-semibold text-blue-300">
-            flightsdealnow
+            FlightDealsNow
           </span>
 
           <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
@@ -61,13 +61,13 @@ function Disclaimer() {
           {/* Introduction */}
           <div className="mb-10 border-b border-slate-200 pb-8">
             <p className="text-[15px] leading-7 text-slate-600 sm:text-base">
-              flightsdealnow is operated by TravelFirst LLC and provides
+              FlightDealsNow is operated by TravelFirst LLC and provides
               travel-related information, flight search assistance, booking
               support, and related services to customers.
             </p>
 
             <p className="mt-4 text-[15px] leading-7 text-slate-600 sm:text-base">
-              The information and services available through flightsdealnow are
+              The information and services available through FlightDealsNow are
               provided to help customers explore and arrange travel options.
               While we make reasonable efforts to provide useful and accurate
               information, travel prices, schedules, availability, policies,
@@ -78,7 +78,7 @@ function Disclaimer() {
 
           <Section number="1" title="Travel Service Provider">
             <p>
-              flightsdealnow is an independent travel service provider and is
+              FlightDealsNow is an independent travel service provider and is
               not an airline, airport, or government agency.
             </p>
 
@@ -99,7 +99,7 @@ function Disclaimer() {
           <Section number="2" title="Flight Information">
             <p>
               We make reasonable efforts to ensure that information displayed
-              or communicated through flightsdealnow is accurate and useful.
+              or communicated through FlightDealsNow is accurate and useful.
               However, flight schedules, fares, availability, routes, baggage
               allowances, restrictions, taxes, and other travel information
               may change without notice.
@@ -135,7 +135,7 @@ function Disclaimer() {
             </p>
 
             <p>
-              flightsdealnow does not guarantee the availability of any
+              FlightDealsNow does not guarantee the availability of any
               particular fare or flight until the applicable booking has been
               successfully confirmed.
             </p>
@@ -165,14 +165,14 @@ function Disclaimer() {
             </p>
 
             <p>
-              flightsdealnow cannot override an airline's fare rules or
+              FlightDealsNow cannot override an airline's fare rules or
               guarantee that an airline will approve a particular request.
             </p>
           </Section>
 
           <Section number="5" title="Third-Party Services">
             <p>
-              flightsdealnow may work with or provide access to independent
+              FlightDealsNow may work with or provide access to independent
               airlines, travel suppliers, reservation systems, payment
               providers, technology providers, and other third parties.
             </p>
@@ -209,7 +209,7 @@ function Disclaimer() {
             </p>
 
             <p>
-              flightsdealnow does not guarantee that a traveler will be
+              FlightDealsNow does not guarantee that a traveler will be
               permitted to enter, leave, or transit through a particular
               country or destination.
             </p>
@@ -235,7 +235,7 @@ function Disclaimer() {
             </p>
 
             <p>
-              flightsdealnow may assist customers in reviewing available
+              FlightDealsNow may assist customers in reviewing available
               options when appropriate, but the airline or relevant travel
               supplier generally determines the remedies, rebooking options,
               credits, or refunds available under its policies.
@@ -256,7 +256,7 @@ function Disclaimer() {
             </p>
 
             <p>
-              flightsdealnow is not responsible for problems caused by
+              FlightDealsNow is not responsible for problems caused by
               incorrect, incomplete, outdated, or misleading information
               provided by a customer.
             </p>
@@ -270,7 +270,7 @@ function Disclaimer() {
           <Section number="9" title="Website Content">
             <p>
               Although we make reasonable efforts to maintain accurate
-              information, flightsdealnow is provided on an “as available”
+              information, FlightDealsNow is provided on an “as available”
               basis.
             </p>
 
@@ -287,7 +287,7 @@ function Disclaimer() {
 
           <Section number="10" title="External Links">
             <p>
-              flightsdealnow may contain links or references to third-party
+              FlightDealsNow may contain links or references to third-party
               websites, applications, or services.
             </p>
 
@@ -307,7 +307,7 @@ function Disclaimer() {
           <Section number="11" title="Limitation of Responsibility">
             <p>
               To the extent permitted by applicable law, TravelFirst LLC and
-              flightsdealnow are not responsible for losses, costs, delays,
+              FlightDealsNow are not responsible for losses, costs, delays,
               disruptions, or other consequences resulting from circumstances
               outside our reasonable control, including airline cancellations,
               delays, schedule changes, weather conditions, airport closures,
@@ -326,7 +326,7 @@ function Disclaimer() {
             <p>
               The availability of travel information, a flight search result,
               fare, booking option, or travel recommendation through
-              flightsdealnow does not guarantee a particular travel experience
+              FlightDealsNow does not guarantee a particular travel experience
               or outcome.
             </p>
 
@@ -346,7 +346,7 @@ function Disclaimer() {
             </p>
 
             <p>
-              Any revised version will be made available on flightsdealnow. We
+              Any revised version will be made available on FlightDealsNow. We
               encourage visitors to review this page periodically.
             </p>
           </Section>
@@ -354,7 +354,7 @@ function Disclaimer() {
           <Section number="14" title="Contact Us">
             <p>
               If you have questions regarding this Disclaimer or the
-              information provided through flightsdealnow, you can contact us
+              information provided through FlightDealsNow, you can contact us
               at:
             </p>
 
@@ -369,10 +369,10 @@ function Disclaimer() {
                 <p>
                   <strong className="text-slate-900">Email:</strong>{" "}
                   <a
-                    href="mailto:contact@flightsdealnow.com"
+                    href="mailto:support@flightdealsnow.com"
                     className="font-medium text-blue-600 hover:underline"
                   >
-                    contact@flightsdealnow.com
+                    support@flightdealsnow.com
                   </a>
                 </p>
 
@@ -389,7 +389,7 @@ function Disclaimer() {
             </div>
 
             <p className="mt-6">
-              By using flightsdealnow, you acknowledge that travel arrangements
+              By using FlightDealsNow, you acknowledge that travel arrangements
               are subject to the policies, terms, availability, and
               operational decisions of the applicable airlines and other
               travel suppliers.
@@ -403,7 +403,7 @@ function Disclaimer() {
             </h3>
 
             <p className="mx-auto mt-3 max-w-xl text-sm leading-6 text-slate-300">
-              Talk with an flightsdealnow travel expert for assistance with your
+              Talk with an FlightDealsNow travel expert for assistance with your
               trip.
             </p>
 

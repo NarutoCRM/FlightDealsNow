@@ -15,7 +15,7 @@ const testimonials = [
   },
   {
     quote:
-      "FlightsDealNow made my travel planning much less stressful. The team was helpful and made sure I understood my options.",
+      "FlightDealsNow made my travel planning much less stressful. The team was helpful and made sure I understood my options.",
     name: "Jessica R.",
     location: "New York, USA",
     initials: "JR",
@@ -45,7 +45,7 @@ const Testimonials = () => {
           </h2>
 
           <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-300 sm:text-lg">
-            See how travelers describe their experience with FlightsDealNow.
+            See how travelers describe their experience with FlightDealsNow.
           </p>
         </div>
 
@@ -85,8 +85,8 @@ const Testimonials = () => {
               <div className="flex items-center gap-4">
                 <div
                   className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full text-sm font-black ${index === 1
-                      ? "bg-cyan-300 text-[#071a33]"
-                      : "bg-white text-[#071a33]"
+                    ? "bg-cyan-300 text-[#071a33]"
+                    : "bg-white text-[#071a33]"
                     }`}
                 >
                   {item.initials}

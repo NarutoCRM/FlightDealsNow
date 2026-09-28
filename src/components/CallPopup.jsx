@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react"
 
-const PHONE_NUMBER = "18669871234"
-const DISPLAY_PHONE = "(888) 348-7083"
+const PHONE_NUMBER = "+1-888-348-7083"
+const DISPLAY_PHONE = "+1-888-348-7083"
 
 const SHOW_AFTER = 20000
 const AUTO_CLOSE_AFTER = 50000
@@ -198,7 +198,7 @@ const CallPopup = () => {
 
                         <div>
                             <p className="text-[10px] font-semibold uppercase tracking-widest text-cyan-300">
-                                FlightsDealNow
+                                FlightDealsNow
                             </p>
 
                             <h3 className="mt-1 text-base font-extrabold leading-5 text-white sm:text-lg">

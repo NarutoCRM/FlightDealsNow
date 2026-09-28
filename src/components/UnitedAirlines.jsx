@@ -85,8 +85,8 @@ export default function UnitedAirlines() {
             a: "Yes. After completing the search form, you can submit your details to request a personalized flight quote.",
         },
         {
-            q: "Is FlightsDealNow United Airlines?",
-            a: "No. FlightsDealNow is an independent travel website that helps travelers submit flight search and quote requests. It is not the official website of United Airlines.",
+            q: "Is FlightDealsNow United Airlines?",
+            a: "No. FlightDealsNow is an independent travel website that helps travelers submit flight search and quote requests. It is not the official website of United Airlines.",
         },
     ];
 
@@ -117,7 +117,7 @@ export default function UnitedAirlines() {
                         <p className="mt-6 max-w-2xl text-base leading-7 text-slate-300 sm:text-lg">
                             Explore United Airlines flight options and submit your travel
                             details to receive a personalized flight quote through
-                            FlightsDealNow.
+                            FlightDealsNow.
                         </p>
                     </div>
                     <FlightSearch airline="United Airlines" />
@@ -149,7 +149,7 @@ export default function UnitedAirlines() {
                         </p>
 
                         <p className="mt-4 max-w-2xl text-base leading-8 text-slate-600">
-                            FlightsDealNow helps travelers organize their preferred route,
+                            FlightDealsNow helps travelers organize their preferred route,
                             dates, travelers and cabin preferences before requesting travel
                             assistance.
                         </p>
@@ -343,7 +343,7 @@ export default function UnitedAirlines() {
 
                     <p className="mx-auto mt-5 max-w-2xl leading-7 text-slate-300">
                         Enter your travel requirements and request a personalized quote
-                        through FlightsDealNow.
+                        through FlightDealsNow.
                     </p>
 
                     <button

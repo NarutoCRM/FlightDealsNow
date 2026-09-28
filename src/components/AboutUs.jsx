@@ -22,7 +22,7 @@ const AboutUs = () => {
 
             <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-2 text-xs font-bold uppercase tracking-widest text-cyan-200">
               <span className="h-2 w-2 rounded-full bg-cyan-300 animate-pulse" />
-              About FlightsDealNow
+              About FlightDealsNow
             </div>
 
             <h1 className="text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl">
@@ -47,7 +47,7 @@ const AboutUs = () => {
               </a>
 
               <a
-                href="tel:18669871234"
+                href="tel:+1-888-348-7083"
                 className="rounded-xl border border-white/20 bg-white/5 px-6 py-3.5 text-sm font-bold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-white/10"
               >
                 Talk to an Expert
@@ -75,7 +75,7 @@ const AboutUs = () => {
 
               <div className="mt-6 space-y-5 text-base leading-8 text-gray-600 sm:text-lg">
                 <p>
-                  At FlightsDealNow, we believe planning a trip should feel
+                  At FlightDealsNow, we believe planning a trip should feel
                   exciting rather than complicated. Whether you're travelling
                   for a family visit, a vacation, or a business trip, choosing
                   the right flight can take time and effort.
@@ -266,7 +266,7 @@ const AboutUs = () => {
                 </p>
 
                 <a
-                  href="tel:18669871234"
+                  href="tel:+1-888-348-7083"
                   className="inline-flex items-center gap-2 rounded-xl bg-[#071a33] px-6 py-3.5 text-sm font-bold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-blue-700"
                 >
                   Talk to a Travel Expert
@@ -317,10 +317,10 @@ const AboutUs = () => {
             </a>
 
             <a
-              href="tel:18669871234"
+              href="tel:+1-888-348-7083"
               className="rounded-xl border border-white/15 bg-white/5 px-7 py-3.5 text-sm font-bold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-white/10"
             >
-              Call {`(888) 348-7083`}
+              Call {`+1-888-348-7083`}
             </a>
 
           </div>

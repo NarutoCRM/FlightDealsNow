@@ -26,7 +26,7 @@ export default function DeltaAirLines() {
             <p className="mt-6 max-w-2xl text-base leading-7 text-slate-300 sm:text-lg">
               Explore Delta Air Lines flight options and submit your travel
               details to receive a personalized flight quote through
-              FlightsDealNow.
+              FlightDealsNow.
             </p>
           </div>
 
@@ -53,7 +53,7 @@ export default function DeltaAirLines() {
           </p>
 
           <p className="mt-4 text-base leading-8 text-slate-600">
-            FlightsDealNow helps travelers organize their trip details before
+            FlightDealsNow helps travelers organize their trip details before
             requesting a personalized flight quote.
           </p>
         </div>
@@ -164,7 +164,7 @@ export default function DeltaAirLines() {
               "Can I search for round-trip flights?",
               "Can I choose my cabin class?",
               "Can I request help with my Delta flight?",
-              "Is FlightsDealNow the official Delta website?",
+              "Is FlightDealsNow the official Delta website?",
             ].map((question, index) => (
               <details
                 key={index}
@@ -178,7 +178,7 @@ export default function DeltaAirLines() {
                 </summary>
 
                 <p className="mt-4 border-t border-slate-100 pt-4 text-sm leading-7 text-slate-600">
-                  FlightsDealNow provides a flight search and quote-request
+                  FlightDealsNow provides a flight search and quote-request
                   experience. Enter your travel requirements above to request
                   assistance with your trip.
                 </p>
@@ -202,7 +202,7 @@ export default function DeltaAirLines() {
 
           <p className="mx-auto mt-5 max-w-2xl leading-7 text-slate-300">
             Enter your travel requirements and request a personalized quote
-            through FlightsDealNow.
+            through FlightDealsNow.
           </p>
 
           <button

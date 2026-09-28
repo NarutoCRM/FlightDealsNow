@@ -37,9 +37,9 @@ const faqs = [
             "Last-minute options may be available depending on current airline schedules, remaining seats, travel dates, and demand. Fares and availability can change quickly.",
     },
     {
-        question: "Why search for Boston flights with flightsdealnow?",
+        question: "Why search for Boston flights with FlightDealsNow?",
         answer:
-            "flightsdealnow provides a convenient way to explore available flight options and compare itineraries based on your travel dates, preferences, and budget.",
+            "FlightDealsNow provides a convenient way to explore available flight options and compare itineraries based on your travel dates, preferences, and budget.",
     },
 ]
 
@@ -115,7 +115,7 @@ export default function CheapFlightsBoston() {
                             </a>
 
                             <a
-                                href="tel:18669871234"
+                                href="tel:+1-888-348-7083"
                                 className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/15 bg-white/5 px-7 py-3.5 text-sm font-bold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-white/10"
                             >
                                 ☎ Talk to an Expert
@@ -158,7 +158,7 @@ export default function CheapFlightsBoston() {
                                 </p>
 
                                 <p>
-                                    flightsdealnow helps you explore available
+                                    FlightDealsNow helps you explore available
                                     flights to Boston and compare options based
                                     on your travel dates, schedule, and budget.
                                 </p>
@@ -666,10 +666,9 @@ export default function CheapFlightsBoston() {
                                         border
                                         transition-all
                                         duration-300
-                                        ${
-                                            isOpen
-                                                ? "border-cyan-200 bg-white shadow-lg"
-                                                : "border-gray-200 bg-white"
+                                        ${isOpen
+                                            ? "border-cyan-200 bg-white shadow-lg"
+                                            : "border-gray-200 bg-white"
                                         }
                                     `}
                                 >
@@ -695,10 +694,9 @@ export default function CheapFlightsBoston() {
                                                     rounded-xl
                                                     text-xs
                                                     font-extrabold
-                                                    ${
-                                                        isOpen
-                                                            ? "bg-[#071a33] text-cyan-300"
-                                                            : "bg-cyan-50 text-cyan-600"
+                                                    ${isOpen
+                                                        ? "bg-[#071a33] text-cyan-300"
+                                                        : "bg-cyan-50 text-cyan-600"
                                                     }
                                                 `}
                                             >
@@ -722,10 +720,9 @@ export default function CheapFlightsBoston() {
                                                 rounded-full
                                                 text-xl
                                                 transition-transform
-                                                ${
-                                                    isOpen
-                                                        ? "rotate-180 bg-cyan-300 text-[#071a33]"
-                                                        : "bg-gray-100 text-gray-500"
+                                                ${isOpen
+                                                    ? "rotate-180 bg-cyan-300 text-[#071a33]"
+                                                    : "bg-gray-100 text-gray-500"
                                                 }
                                             `}
                                         >

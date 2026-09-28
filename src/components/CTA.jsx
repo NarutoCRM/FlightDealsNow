@@ -42,7 +42,7 @@ const CTA = () => {
             </button>
 
             <a
-              href="tel:18669871234"
+              href="tel:+1-888-348-7083"
               className="group inline-flex items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/5 px-7 py-3.5 font-bold text-white transition-all duration-300 hover:-translate-y-1 hover:border-cyan-300/40 hover:bg-white/10"
             >
               <span className="text-cyan-300">☎</span>

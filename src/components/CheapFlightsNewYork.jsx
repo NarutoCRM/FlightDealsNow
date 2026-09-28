@@ -37,9 +37,9 @@ const faqs = [
             "Last-minute flights can be available, but options and prices depend heavily on current availability and demand. If you're booking close to departure, compare the available itineraries carefully.",
     },
     {
-        question: "Why use FlightsDealNow when planning a New York trip?",
+        question: "Why use FlightDealsNow when planning a New York trip?",
         answer:
-            "FlightsDealNow gives you a convenient way to explore available flight options and compare itineraries according to your travel dates and preferences, helping you make a more informed booking decision.",
+            "FlightDealsNow gives you a convenient way to explore available flight options and compare itineraries according to your travel dates and preferences, helping you make a more informed booking decision.",
     },
 ]
 
@@ -131,7 +131,7 @@ function CheapFlightsNewYork() {
 
                         <div className="inline-flex items-center gap-2 rounded-full border border-cyan-300/30 bg-white/10 px-4 py-2 text-sm font-bold text-cyan-200 backdrop-blur-md">
                             <span className="h-2 w-2 rounded-full bg-cyan-300" />
-                            FlightsDealNow · New York
+                            FlightDealsNow · New York
                         </div>
 
                         <h1 className="mt-7 text-5xl font-black leading-[1.03] tracking-tight text-white sm:text-6xl lg:text-7xl">
@@ -212,7 +212,7 @@ function CheapFlightsNewYork() {
                         </p>
 
                         <p className="mt-5 text-lg leading-8 text-slate-600">
-                            FlightsDealNow helps you explore available flights to
+                            FlightDealsNow helps you explore available flights to
                             New York City and compare different options before you
                             book. You can look at one-way and round-trip flights,
                             check different schedules, and choose an itinerary
@@ -677,7 +677,7 @@ function CheapFlightsNewYork() {
 
                     <p className="mx-auto mt-4 max-w-3xl text-lg leading-8 text-slate-300">
                         When you're ready to start planning, explore available
-                        flights to New York City with FlightsDealNow. Compare
+                        flights to New York City with FlightDealsNow. Compare
                         your options and find an itinerary that works for your trip.
                     </p>
 
@@ -722,8 +722,8 @@ function CheapFlightsNewYork() {
                                 <div
                                     key={faq.question}
                                     className={`overflow-hidden rounded-2xl border transition ${isOpen
-                                            ? "border-cyan-300 bg-[#f7fafc] shadow-sm"
-                                            : "border-slate-200 bg-white"
+                                        ? "border-cyan-300 bg-[#f7fafc] shadow-sm"
+                                        : "border-slate-200 bg-white"
                                         }`}
                                 >
 

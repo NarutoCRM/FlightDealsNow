@@ -78,7 +78,7 @@ export default function PopularDestinations() {
 
             <p className="mt-5 max-w-xl text-base leading-7 text-slate-300 sm:text-lg">
               Browse inspiring city escapes and discover your next route with
-              FlightsDealNow.
+              FlightDealsNow.
             </p>
           </div>
 
@@ -100,14 +100,14 @@ export default function PopularDestinations() {
               key={destination.name}
               href={destination.link}
               className={`group relative overflow-hidden rounded-[28px] border border-white/10 bg-white/5 shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-cyan-300/40 hover:shadow-cyan-950/40 ${index === 0 || index === 3
-                  ? "lg:col-span-7"
-                  : "lg:col-span-5"
+                ? "lg:col-span-7"
+                : "lg:col-span-5"
                 }`}
             >
               <div
                 className={`relative overflow-hidden ${index === 0 || index === 3
-                    ? "h-[360px] sm:h-[400px]"
-                    : "h-[300px] sm:h-[340px]"
+                  ? "h-[360px] sm:h-[400px]"
+                  : "h-[300px] sm:h-[340px]"
                   }`}
               >
                 <img

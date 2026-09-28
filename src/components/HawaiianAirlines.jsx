@@ -50,8 +50,8 @@ const faqs = [
         a: "Yes. The search form allows you to select your preferred cabin class.",
     },
     {
-        q: "Is FlightsDealNow the official Hawaiian Airlines website?",
-        a: "No. FlightsDealNow is an independent travel website providing flight search and quote-request services.",
+        q: "Is FlightDealsNow the official Hawaiian Airlines website?",
+        a: "No. FlightDealsNow is an independent travel website providing flight search and quote-request services.",
     },
 ];
 
@@ -88,7 +88,7 @@ export default function HawaiianAirlines() {
                             <p className="mt-7 max-w-xl text-base leading-8 text-slate-300 sm:text-lg">
                                 Search Hawaiian Airlines flight options and organize your
                                 travel details before requesting a personalized quote through
-                                FlightsDealNow.
+                                FlightDealsNow.
                             </p>
 
                             <div className="mt-9 flex flex-wrap gap-3">

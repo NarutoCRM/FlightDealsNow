@@ -83,9 +83,9 @@ const faqs = [
             "Yes. You can select your preferred cabin class before submitting your flight search.",
     },
     {
-        question: "Is FlightsDealNow the official Spirit Airlines website?",
+        question: "Is FlightDealsNow the official Spirit Airlines website?",
         answer:
-            "No. FlightsDealNow is an independent travel website providing flight search and quote-request services. It is not the official website of Spirit Airlines.",
+            "No. FlightDealsNow is an independent travel website providing flight search and quote-request services. It is not the official website of Spirit Airlines.",
     },
 ];
 
@@ -118,7 +118,7 @@ export default function SpiritAirlines() {
 
                             <p className="mt-7 max-w-xl text-base leading-8 text-slate-300 sm:text-lg">
                                 Search Spirit Airlines flight options and share your travel
-                                requirements with FlightsDealNow to request a personalized
+                                requirements with FlightDealsNow to request a personalized
                                 flight quote.
                             </p>
 

@@ -6,7 +6,7 @@ const PrivacyPolicy = () => {
       <section className="bg-gradient-to-r from-[#062b5c] to-[#1687d9]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-16">
           <p className="text-sm font-semibold text-white/70 mb-2">
-            flightsdealnow
+            FlightDealsNow
           </p>
 
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white">
@@ -27,8 +27,8 @@ const PrivacyPolicy = () => {
           <div className="space-y-5 text-gray-600 text-sm sm:text-base leading-7">
 
             <p>
-              At flightsdealnow, your privacy matters to us. This Privacy Policy
-              explains how TravelFirst LLC (“TravelFirst LLC,” “flightsdealnow,”
+              At FlightDealsNow, your privacy matters to us. This Privacy Policy
+              explains how TravelFirst LLC (“TravelFirst LLC,” “FlightDealsNow,”
               “we,” “us,” or “our”) collects, uses, shares, and protects
               information when you visit or use our website, contact us,
               request travel information, or use our flight search and
@@ -36,7 +36,7 @@ const PrivacyPolicy = () => {
             </p>
 
             <p>
-              By accessing or using flightsdealnow, you acknowledge that you have
+              By accessing or using FlightDealsNow, you acknowledge that you have
               read and understood this Privacy Policy. If you do not agree with
               the practices described here, please discontinue use of our
               website.
@@ -49,7 +49,7 @@ const PrivacyPolicy = () => {
 
             <p>
               We may collect information that you voluntarily provide when you
-              interact with flightsdealnow. Depending on how you use our website
+              interact with FlightDealsNow. Depending on how you use our website
               or communicate with us, this may include:
             </p>
 
@@ -120,7 +120,7 @@ const PrivacyPolicy = () => {
 
             <p>
               We do not sell your personal information simply because you visit
-              or use flightsdealnow.
+              or use FlightDealsNow.
             </p>
 
             <p>
@@ -165,7 +165,7 @@ const PrivacyPolicy = () => {
           <PolicySection title="4. Cookies & Similar Technologies">
 
             <p>
-              flightsdealnow may use cookies, pixels, tags, analytics tools, and
+              FlightDealsNow may use cookies, pixels, tags, analytics tools, and
               similar technologies to help the website function properly and
               understand how visitors use our website.
             </p>
@@ -279,7 +279,7 @@ const PrivacyPolicy = () => {
           <PolicySection title="9. Children's Privacy">
 
             <p>
-              flightsdealnow is not intended to knowingly collect personal
+              FlightDealsNow is not intended to knowingly collect personal
               information directly from children under the age of 13. We
               encourage parents and guardians to supervise children's use of
               online services.
@@ -298,7 +298,7 @@ const PrivacyPolicy = () => {
           <PolicySection title="10. International Users">
 
             <p>
-              flightsdealnow primarily serves customers in the United States.
+              FlightDealsNow primarily serves customers in the United States.
               However, visitors may access our website from other countries. If
               you access our website from outside the United States, you
               understand that information you provide may be processed or
@@ -351,10 +351,10 @@ const PrivacyPolicy = () => {
               <p>
                 <strong className="text-[#123b7a]">Email:</strong>{" "}
                 <a
-                  href="mailto:contact@flightsdealnow.com"
+                  href="mailto:support@flightdealsnow.com"
                   className="text-[#1687d9] hover:underline"
                 >
-                  contact@flightsdealnow.com
+                  support@flightdealsnow.com
                 </a>
               </p>
 
@@ -373,7 +373,7 @@ const PrivacyPolicy = () => {
             <p className="text-sm sm:text-base leading-7">
               We value your trust and are committed to handling your
               information responsibly while providing a convenient and reliable
-              experience through flightsdealnow.
+              experience through FlightDealsNow.
             </p>
 
           </div>

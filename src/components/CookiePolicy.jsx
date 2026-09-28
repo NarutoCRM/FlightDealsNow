@@ -1,8 +1,8 @@
 import React from "react"
 
-const PHONE_NUMBER = "(888) 348-7083"
-const DISPLAY_PHONE = "(888) 348-7083"
-const EMAIL = "contact@flightsdealnow.com"
+const PHONE_NUMBER = "+1-888-348-7083"
+const DISPLAY_PHONE = "+1-888-348-7083"
+const EMAIL = "support@flightdealsnow.com"
 
 const Section = ({ number, title, children }) => (
     <section className="mb-12">
@@ -53,7 +53,7 @@ function CookiePolicy() {
                 <div className="relative mx-auto max-w-5xl px-5 py-20 text-center sm:px-6 sm:py-24">
 
                     <span className="inline-flex rounded-full border border-cyan-300/30 bg-cyan-300/10 px-4 py-2 text-sm font-semibold text-cyan-200 backdrop-blur-md">
-                        FlightsDealNow · Privacy Center
+                        FlightDealsNow · Privacy Center
                     </span>
 
                     <h1 className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
@@ -61,7 +61,7 @@ function CookiePolicy() {
                     </h1>
 
                     <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-300 sm:text-lg">
-                        Learn how FlightsDealNow uses cookies and similar
+                        Learn how FlightDealsNow uses cookies and similar
                         technologies to support website functionality,
                         analytics, user experience, and marketing activities.
                     </p>
@@ -104,7 +104,7 @@ function CookiePolicy() {
 
                             <div className="space-y-4 text-[15px] leading-7 text-slate-600 sm:text-base">
                                 <p>
-                                    At FlightsDealNow, operated by TravelFirst
+                                    At FlightDealsNow, operated by TravelFirst
                                     LLC, we use cookies and similar technologies
                                     to help our website work efficiently,
                                     understand how visitors use our website,
@@ -120,7 +120,7 @@ function CookiePolicy() {
                                 </p>
 
                                 <p>
-                                    By using FlightsDealNow, you acknowledge
+                                    By using FlightDealsNow, you acknowledge
                                     that cookies and similar technologies may
                                     be used as described in this policy, subject
                                     to the choices and controls available to you.
@@ -157,9 +157,9 @@ function CookiePolicy() {
                     </Section>
 
                     {/* Section 2 */}
-                    <Section number="2" title="Why FlightsDealNow Uses Cookies">
+                    <Section number="2" title="Why FlightDealsNow Uses Cookies">
                         <p>
-                            FlightsDealNow may use cookies and similar
+                            FlightDealsNow may use cookies and similar
                             technologies for purposes such as:
                         </p>
 
@@ -180,7 +180,7 @@ function CookiePolicy() {
 
                         <p>
                             The specific cookies and technologies used on
-                            FlightsDealNow may change as we update our website,
+                            FlightDealsNow may change as we update our website,
                             services, technology, or marketing practices.
                         </p>
                     </Section>
@@ -241,7 +241,7 @@ function CookiePolicy() {
 
                                 <p className="mt-3">
                                     Analytics cookies help us understand how
-                                    visitors use FlightsDealNow.
+                                    visitors use FlightDealsNow.
                                 </p>
 
                                 <p>
@@ -273,7 +273,7 @@ function CookiePolicy() {
                                 </h3>
 
                                 <p className="mt-3">
-                                    Where applicable, FlightsDealNow may use
+                                    Where applicable, FlightDealsNow may use
                                     cookies or similar tracking technologies
                                     to understand the effectiveness of
                                     advertising campaigns, measure interactions
@@ -304,7 +304,7 @@ function CookiePolicy() {
                     <Section number="4" title="Third-Party Cookies">
                         <p>
                             Some cookies or similar technologies used on
-                            FlightsDealNow may be placed by third-party service
+                            FlightDealsNow may be placed by third-party service
                             providers.
                         </p>
 
@@ -332,7 +332,7 @@ function CookiePolicy() {
                         </p>
 
                         <p>
-                            FlightsDealNow does not control the privacy
+                            FlightDealsNow does not control the privacy
                             practices of independent third-party providers.
                             We encourage you to review the applicable privacy
                             policies of third-party services when you interact
@@ -423,7 +423,7 @@ function CookiePolicy() {
 
                         <p>
                             Where a cookie preference or consent tool is
-                            available on FlightsDealNow, you may also be able
+                            available on FlightDealsNow, you may also be able
                             to manage certain categories of cookies through
                             that tool.
                         </p>
@@ -467,7 +467,7 @@ function CookiePolicy() {
                         <p>
                             Because there is not one universally adopted
                             technical standard for responding to these signals,
-                            FlightsDealNow may not respond to every
+                            FlightDealsNow may not respond to every
                             browser-based Do Not Track signal in the same way.
                         </p>
 
@@ -482,7 +482,7 @@ function CookiePolicy() {
                         <p>
                             Cookies may collect information about your device,
                             browser, website activity, and interactions with
-                            FlightsDealNow.
+                            FlightDealsNow.
                         </p>
 
                         <p>
@@ -503,12 +503,12 @@ function CookiePolicy() {
                     {/* Section 10 */}
                     <Section number="10" title="Third-Party Websites">
                         <p>
-                            FlightsDealNow may contain links to websites or
+                            FlightDealsNow may contain links to websites or
                             services operated by third parties.
                         </p>
 
                         <p>
-                            If you leave FlightsDealNow and visit a third-party
+                            If you leave FlightDealsNow and visit a third-party
                             website, that website may use its own cookies,
                             tracking technologies, and privacy practices.
                         </p>
@@ -545,7 +545,7 @@ function CookiePolicy() {
                     {/* Section 12 */}
                     <Section number="12" title="Children's Privacy">
                         <p>
-                            FlightsDealNow is intended for a general audience
+                            FlightDealsNow is intended for a general audience
                             and is not designed to knowingly collect personal
                             information from children under 13.
                         </p>
@@ -571,7 +571,7 @@ function CookiePolicy() {
 
                         <p>
                             Any updated version will be published on
-                            FlightsDealNow. We encourage visitors to review
+                            FlightDealsNow. We encourage visitors to review
                             this policy periodically to stay informed about
                             how cookies and similar technologies may be used.
                         </p>
@@ -582,7 +582,7 @@ function CookiePolicy() {
 
                         <p>
                             If you have questions about this Cookie Policy or
-                            how cookies are used on FlightsDealNow, please
+                            how cookies are used on FlightDealsNow, please
                             contact us:
                         </p>
 
@@ -659,7 +659,7 @@ function CookiePolicy() {
                         <p className="mt-6">
                             We value your privacy and aim to provide clear
                             information about the technologies used to support
-                            your experience on FlightsDealNow.
+                            your experience on FlightDealsNow.
                         </p>
                     </Section>
 

@@ -36,7 +36,7 @@ const JourneyPriority = () => {
                     </p>
                     <p className="mt-1 text-xs leading-5 text-white/75">
                       Explore routes, compare options and request your flight
-                      quote with FlightsDealNow.
+                      quote with FlightDealsNow.
                     </p>
                   </div>
                 </div>
@@ -52,7 +52,7 @@ const JourneyPriority = () => {
 
                 <div>
                   <p className="text-xs font-bold uppercase tracking-wider text-slate-400">
-                    FlightsDealNow
+                    FlightDealsNow
                   </p>
                   <p className="mt-1 text-sm font-extrabold text-[#071a33]">
                     Travel made easier
@@ -77,7 +77,7 @@ const JourneyPriority = () => {
 
             <p className="mt-6 text-base leading-7 text-slate-600 sm:text-lg">
               Planning a trip should be exciting, not complicated. At
-              FlightsDealNow, we make it easier to explore flight options and
+              FlightDealsNow, we make it easier to explore flight options and
               take the next step toward your destination.
             </p>
 

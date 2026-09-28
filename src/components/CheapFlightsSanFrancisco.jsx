@@ -37,9 +37,9 @@ const faqs = [
             "Last-minute flights may be available depending on airline schedules, remaining seats, travel dates, and demand. Fares and availability can change quickly.",
     },
     {
-        question: "Why use FlightsDealNow to search for San Francisco flights?",
+        question: "Why use FlightDealsNow to search for San Francisco flights?",
         answer:
-            "FlightsDealNow gives travelers a convenient way to explore available flight options and compare itineraries based on their dates, preferences, and budget.",
+            "FlightDealsNow gives travelers a convenient way to explore available flight options and compare itineraries based on their dates, preferences, and budget.",
     },
 ]
 
@@ -132,7 +132,7 @@ function CheapFlightsSanFrancisco() {
 
                         <div className="inline-flex items-center gap-2 rounded-full border border-cyan-300/30 bg-white/10 px-4 py-2 text-sm font-bold text-cyan-200 backdrop-blur-md">
                             <span className="h-2 w-2 rounded-full bg-cyan-300" />
-                            FlightsDealNow · San Francisco
+                            FlightDealsNow · San Francisco
                         </div>
 
                         <h1 className="mt-7 text-5xl font-black leading-[1.03] tracking-tight text-white sm:text-6xl lg:text-7xl">
@@ -223,7 +223,7 @@ function CheapFlightsSanFrancisco() {
                         </p>
 
                         <p className="mt-5 text-lg leading-8 text-slate-600">
-                            FlightsDealNow lets you explore available flights to
+                            FlightDealsNow lets you explore available flights to
                             San Francisco and compare options based on your dates,
                             schedule, and budget. Check one-way and round-trip
                             itineraries and find an option that suits the way
@@ -367,7 +367,7 @@ function CheapFlightsSanFrancisco() {
                         </p>
 
                         <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-300">
-                            With FlightsDealNow, you can explore available San
+                            With FlightDealsNow, you can explore available San
                             Francisco flight options and compare different choices.
                         </p>
 
@@ -710,11 +710,10 @@ function CheapFlightsSanFrancisco() {
                             return (
                                 <div
                                     key={faq.question}
-                                    className={`overflow-hidden rounded-2xl border transition ${
-                                        isOpen
+                                    className={`overflow-hidden rounded-2xl border transition ${isOpen
                                             ? "border-cyan-300 bg-[#f7fafc] shadow-sm"
                                             : "border-slate-200 bg-white"
-                                    }`}
+                                        }`}
                                 >
 
                                     <button
@@ -738,9 +737,8 @@ function CheapFlightsSanFrancisco() {
                                         </div>
 
                                         <span
-                                            className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-cyan-50 text-xl font-bold text-blue-600 transition-transform ${
-                                                isOpen ? "rotate-45" : ""
-                                            }`}
+                                            className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-cyan-50 text-xl font-bold text-blue-600 transition-transform ${isOpen ? "rotate-45" : ""
+                                                }`}
                                         >
                                             +
                                         </span>

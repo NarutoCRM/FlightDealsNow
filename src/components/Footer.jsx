@@ -1,4 +1,5 @@
-const PHONE = "(888) 348-7083"
+const PHONE = "+1-888-348-7083"
+// + 1 - 888 - 348 - 7083
 
 export default function Footer() {
   return (
@@ -14,7 +15,7 @@ export default function Footer() {
 
               <div>
                 <div className="text-lg font-extrabold text-white">
-                  flightsdealnow
+                  FlightDealsNow
                 </div>
                 <div className="text-[10px] uppercase tracking-wider text-slate-500">
                   Travel Made Easier
@@ -24,7 +25,7 @@ export default function Footer() {
 
             <p className="mt-4 max-w-sm text-sm leading-6 text-slate-400">
               Explore available travel options, compare itineraries, and find
-              a trip that fits your plans with flightsdealnow.
+              a trip that fits your plans with FlightDealsNow.
             </p>
           </div>
 
@@ -108,14 +109,14 @@ export default function Footer() {
                 href={`tel:${PHONE}`}
                 className="block font-semibold text-white hover:text-blue-400"
               >
-                (888) 348-7083
+                +1-888-348-7083
               </a>
 
               <a
-                href="mailto:contact@flightsdealnow.com"
+                href="mailto:support@flightdealsnow.com"
                 className="block break-all hover:text-white"
               >
-                contact@flightsdealnow.com
+                support@flightdealsnow.com
               </a>
 
               <p className="leading-6 text-slate-400">
@@ -191,7 +192,7 @@ export default function Footer() {
 
           <div className="mt-5 flex flex-col justify-between gap-3 text-xs text-slate-500 sm:flex-row">
             <p>
-              © {new Date().getFullYear()} flightsdealnow. All rights reserved.
+              © {new Date().getFullYear()} FlightDealsNow. All rights reserved.
             </p>
 
             {/* <p>Operated by TravelFirst LLC</p> */}
