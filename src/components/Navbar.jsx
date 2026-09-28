@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const PHONE = "18557502715"
+const PHONE = "1(888) 348-7083"
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -23,7 +23,7 @@ export default function Navbar() {
         <nav className="hidden items-center gap-8 lg:flex">
           {links.map(([label, href]) => <a key={label} href={href} className="text-sm font-semibold text-slate-600 transition hover:text-blue-600">{label}</a>)}
         </nav>
-        <a href={`tel:${PHONE}`} className="hidden rounded-full bg-slate-950 px-5 py-3 text-sm font-bold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-blue-700 lg:block opacity-80">Call us 24/7  <br /> (855) 999-9999 </a>
+        <a href={`tel:${PHONE}`} className="hidden rounded-full bg-slate-950 px-5 py-3 text-sm font-bold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-blue-700 lg:block opacity-80">Call us 24/7  <br /> (888) 348-7083 </a>
 
         <button onClick={() => setMenuOpen(!menuOpen)} className="grid h-10 w-10 place-items-center rounded-xl border border-slate-200 lg:hidden">{menuOpen ? "×" : "☰"}</button>
       </div>

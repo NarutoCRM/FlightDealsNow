@@ -1,4 +1,4 @@
-const PHONE = "8557502715"
+const PHONE = "(888) 348-7083"
 
 export default function Footer() {
   return (
@@ -108,7 +108,7 @@ export default function Footer() {
                 href={`tel:${PHONE}`}
                 className="block font-semibold text-white hover:text-blue-400"
               >
-                (855) 999-9999
+                (888) 348-7083
               </a>
 
               <a
@@ -194,7 +194,7 @@ export default function Footer() {
               © {new Date().getFullYear()} flightsdealnow. All rights reserved.
             </p>
 
-            <p>Operated by TravelFirst LLC</p>
+            {/* <p>Operated by TravelFirst LLC</p> */}
           </div>
         </div>
       </div>

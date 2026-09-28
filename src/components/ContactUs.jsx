@@ -1,7 +1,7 @@
 import { useState } from "react"
 
-const PHONE = "8557502715"
-const DISPLAY_PHONE = "(855) 999-9999"
+const PHONE = "(888) 348-7083"
+const DISPLAY_PHONE = "(888) 348-7083"
 const EMAIL = "contact@flightsdealnow.com"
 
 export default function ContactUs() {

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react"
 
 const PHONE_NUMBER = "18669871234"
-const DISPLAY_PHONE = "(855) 999-9999"
+const DISPLAY_PHONE = "(888) 348-7083"
 
 const SHOW_AFTER = 20000
 const AUTO_CLOSE_AFTER = 50000

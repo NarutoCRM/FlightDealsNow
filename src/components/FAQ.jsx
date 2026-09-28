@@ -24,7 +24,7 @@ const faqs = [
     {
         question: "How can I contact FlightsDealNow?",
         answer:
-            "You can reach our travel team by phone at (855) 999-9999. Our team can help with questions about your flight search and travel request.",
+            "You can reach our travel team by phone at (888) 348-7083. Our team can help with questions about your flight search and travel request.",
     },
     {
         question: "Can I get help with my complete travel plans?",
@@ -96,10 +96,10 @@ const FAQ = () => {
                         </p>
 
                         <a
-                            href="tel:18557502715"
+                            href="tel:1(888) 348-7083"
                             className="mt-3 block text-xl font-black text-cyan-300 transition hover:text-white"
                         >
-                            (855) 999-9999
+                            (888) 348-7083
                         </a>
 
                         <p className="mt-2 text-xs leading-5 text-slate-400">
@@ -120,8 +120,8 @@ const FAQ = () => {
                                 <div
                                     key={faq.question}
                                     className={`group overflow-hidden rounded-[22px] border transition-all duration-300 ${isOpen
-                                            ? "border-cyan-300/30 bg-white/[0.10] shadow-xl shadow-black/10"
-                                            : "border-white/10 bg-white/[0.05] hover:border-white/20 hover:bg-white/[0.08]"
+                                        ? "border-cyan-300/30 bg-white/[0.10] shadow-xl shadow-black/10"
+                                        : "border-white/10 bg-white/[0.05] hover:border-white/20 hover:bg-white/[0.08]"
                                         }`}
                                 >
 
@@ -136,8 +136,8 @@ const FAQ = () => {
 
                                             <span
                                                 className={`hidden h-8 w-8 shrink-0 items-center justify-center rounded-lg text-xs font-black sm:flex ${isOpen
-                                                        ? "bg-cyan-300 text-[#071a33]"
-                                                        : "bg-white/10 text-slate-400"
+                                                    ? "bg-cyan-300 text-[#071a33]"
+                                                    : "bg-white/10 text-slate-400"
                                                     }`}
                                             >
                                                 {String(index + 1).padStart(2, "0")}
@@ -145,8 +145,8 @@ const FAQ = () => {
 
                                             <span
                                                 className={`text-sm font-extrabold sm:text-base ${isOpen
-                                                        ? "text-cyan-300"
-                                                        : "text-white"
+                                                    ? "text-cyan-300"
+                                                    : "text-white"
                                                     }`}
                                             >
                                                 {faq.question}
@@ -157,8 +157,8 @@ const FAQ = () => {
                                         {/* Toggle */}
                                         <span
                                             className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full transition-all duration-300 ${isOpen
-                                                    ? "rotate-45 bg-cyan-300 text-[#071a33]"
-                                                    : "bg-white/10 text-slate-300 group-hover:bg-white/15"
+                                                ? "rotate-45 bg-cyan-300 text-[#071a33]"
+                                                : "bg-white/10 text-slate-300 group-hover:bg-white/15"
                                                 }`}
                                         >
                                             <svg
@@ -181,8 +181,8 @@ const FAQ = () => {
                                     {/* Answer */}
                                     <div
                                         className={`grid transition-all duration-300 ${isOpen
-                                                ? "grid-rows-[1fr] opacity-100"
-                                                : "grid-rows-[0fr] opacity-0"
+                                            ? "grid-rows-[1fr] opacity-100"
+                                            : "grid-rows-[0fr] opacity-0"
                                             }`}
                                     >
                                         <div className="overflow-hidden">

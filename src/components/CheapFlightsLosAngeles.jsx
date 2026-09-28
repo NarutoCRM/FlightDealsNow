@@ -357,7 +357,7 @@ export default function CheapFlightsLasVegas() {
                             </div>
 
                             <a
-                                href="tel:8557502715"
+                                href="tel:(888) 348-7083"
                                 className="inline-flex items-center justify-center rounded-2xl bg-cyan-300 px-7 py-4 font-black text-[#071a33] transition hover:-translate-y-1 hover:bg-cyan-200"
                             >
                                 ☎ Talk to a Travel Expert
@@ -399,8 +399,8 @@ export default function CheapFlightsLasVegas() {
                                 <div
                                     key={faq.question}
                                     className={`overflow-hidden rounded-2xl border transition ${isOpen
-                                            ? "border-cyan-300 bg-[#f7fafc] shadow-sm"
-                                            : "border-slate-200 bg-white"
+                                        ? "border-cyan-300 bg-[#f7fafc] shadow-sm"
+                                        : "border-slate-200 bg-white"
                                         }`}
                                 >
 
@@ -483,7 +483,7 @@ export default function CheapFlightsLasVegas() {
                                 </a>
 
                                 <a
-                                    href="tel:8557502715"
+                                    href="tel:(888) 348-7083"
                                     className="rounded-2xl border border-white/20 bg-white/5 px-7 py-4 font-bold text-white transition hover:bg-white/10"
                                 >
                                     Call a Travel Expert

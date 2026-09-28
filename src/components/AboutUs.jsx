@@ -320,7 +320,7 @@ const AboutUs = () => {
               href="tel:18669871234"
               className="rounded-xl border border-white/15 bg-white/5 px-7 py-3.5 text-sm font-bold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-white/10"
             >
-              Call {`(855) 999-9999`}
+              Call {`(888) 348-7083`}
             </a>
 
           </div>

@@ -478,10 +478,10 @@ const TermsConditions = () => {
                                     Phone:
                                 </strong>{" "}
                                 <a
-                                    href="tel:8557502715"
+                                    href="tel:(888) 348-7083"
                                     className="text-[#1687d9] hover:underline"
                                 >
-                                    (855) 999-9999
+                                    (888) 348-7083
                                 </a>
                             </p>
 
