@@ -57,7 +57,7 @@ const destinations = [
 
 export default function PopularDestinations() {
   return (
-    <section className="relative overflow-hidden bg-[#071a33] py-20 sm:py-24">
+    <section id="destinations" className="relative overflow-hidden bg-[#071a33] py-20 sm:py-24">
       {/* Background decoration */}
       <div className="pointer-events-none absolute -left-32 top-20 h-72 w-72 rounded-full bg-blue-500/10 blur-3xl" />
       <div className="pointer-events-none absolute -right-32 bottom-0 h-96 w-96 rounded-full bg-cyan-400/10 blur-3xl" />

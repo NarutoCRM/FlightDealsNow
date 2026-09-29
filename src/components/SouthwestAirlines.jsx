@@ -1,4 +1,13 @@
 import FlightSearch from "./FlightSearch";
+import SEO from "./SEO";
+
+
+
+<SEO
+  title="Southwest Airlines Flights | Search & Get a Quote | FlightsDealNow"
+  description="Explore Southwest Airlines flight search options, enter your travel details and request a personalized quote."
+  path="/airlines/southwest-airlines"
+/>
 
 export default function SouthwestAirlines() {
   return (

@@ -1,10 +1,19 @@
 import React from "react"
+import SEO from "./SEO";
+
+
 
 const PHONE_NUMBER = "+1-888-348-7083"
 const DISPLAY_PHONE = "+1-888-348-7083"
 
 const Section = ({ number, title, children }) => (
+
   <section className="mb-10">
+    <SEO
+      title="Disclaimer | FlightsDealNow"
+      description="Read the FlightsDealNow disclaimer regarding flight information, travel services, airline references, pricing, availability, and third-party providers."
+      path="/disclaimer"
+    />
     <h2 className="mb-4 text-xl font-bold text-slate-900 sm:text-2xl">
       {number}. {title}
     </h2>

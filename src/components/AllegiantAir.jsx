@@ -1,5 +1,12 @@
 import FlightSearch from "./FlightSearch";
+import SEO from "./SEO";
 
+
+<SEO
+  title="Allegiant Air Flights | Search & Get a Quote | FlightsDealNow"
+  description="Explore Allegiant Air flight search options, enter your trip details and request a personalized flight quote."
+  path="/airlines/allegiant-air"
+/>
 const routeExamples = [
     {
         from: "Las Vegas",

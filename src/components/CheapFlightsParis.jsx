@@ -1,4 +1,6 @@
 import { useState } from "react"
+import SEO from "./SEO";
+
 
 const faqs = [
   {
@@ -104,7 +106,11 @@ function CheapFlightsParis() {
 
   return (
     <main className="overflow-hidden bg-[#f7fafc] text-slate-900">
-
+      <SEO
+        title="Cheap Flights to Paris | FlightsDealNow"
+        description="Explore flight options to Paris, compare travel dates and airports, and request a personalized flight quote through FlightsDealNow."
+        path="/cheap-flights-paris"
+      />
       {/* HERO */}
       <section className="relative min-h-[640px] overflow-hidden bg-[#071a33]">
 
@@ -684,8 +690,8 @@ function CheapFlightsParis() {
                 <div
                   key={faq.question}
                   className={`overflow-hidden rounded-2xl border transition ${isOpen
-                      ? "border-cyan-300 bg-[#f7fafc] shadow-sm"
-                      : "border-slate-200 bg-white"
+                    ? "border-cyan-300 bg-[#f7fafc] shadow-sm"
+                    : "border-slate-200 bg-white"
                     }`}
                 >
 

@@ -1,5 +1,10 @@
 import FlightSearch from "./FlightSearch";
-
+import SEO from "./SEO";
+<SEO
+  title="JetBlue Airways Flights | Search & Get a Quote | FlightsDealNow"
+  description="Explore JetBlue Airways flight search options, select your trip details and request a personalized quote."
+  path="/airlines/jetblue-airways"
+/>
 export default function JetBlueAirways() {
     return (
         <div className="bg-[#f7fafc] text-slate-900">

@@ -1,5 +1,13 @@
-const AboutUs = () => {
+import SEO from "./SEO";
+
+
+const AboutUs = () => {<SEO
+  title="About FlightsDealNow | Your Flight Search & Travel Support"
+  description="Learn more about FlightsDealNow and how we help travelers search flights and request personalized travel quotes."
+  path="/about-us"
+/>
   return (
+    
     <main className="bg-[#f7fafc]">
 
       {/* ================= HERO ================= */}

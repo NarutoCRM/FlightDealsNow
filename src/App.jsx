@@ -7,6 +7,7 @@ import CallPopup from "./components/CallPopup"
 
 import Hero from "./components/Hero"
 import FlightDeals from "./components/FlightDeals"
+import Deals from "./components/Deals"
 import PopularDestinations from "./components/PopularDestinations"
 import WhyBook from "./components/WhyBook"
 import JourneyPriority from "./components/JourneyPriority"
@@ -39,7 +40,9 @@ import SpiritAirlines from "./components/SpiritAirlines";
 import FrontierAirlines from "./components/FrontierAirlines";
 import HawaiianAirlines from "./components/HawaiianAirlines";
 import AllegiantAir from "./components/AllegiantAir";
+import Destinations from "./components/destinations"
 
+import SEO from "./components/SEO";
 
 
 
@@ -66,6 +69,11 @@ function Layout({ children, floating = true }) {
 function Home() {
   return (
     <Layout>
+      <SEO
+        title="FlightsDealNow | Search Flights & Get a Free Quote"
+        description="Search flights, compare travel options, and request a personalized flight quote with FlightsDealNow."
+        path="/"
+      />
       <Hero />
       <FlightDeals />
       <PopularDestinations />
@@ -103,6 +111,12 @@ function App() {
         <Route path="/airlines/frontier-airlines" element={<Layout> <FrontierAirlines /> </Layout>} />
         <Route path="/airlines/hawaiian-airlines" element={<Layout> <HawaiianAirlines /> </Layout>} />
         <Route path="/airlines/allegiant-air" element={<Layout> <AllegiantAir /> </Layout>} />
+
+
+
+
+        <Route path="Deals" element={<Layout> <Deals /> </Layout>} />
+        <Route path="Destinations" element={<Layout> <Destinations /> </Layout>} />
 
 
         <Route path="/cancellation-refund" element={<Layout> <CancellationRefund /> </Layout>} />

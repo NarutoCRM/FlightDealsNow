@@ -1,3 +1,13 @@
+
+import SEO from "./SEO";
+
+<SEO
+  title="Cancellation & Refund Policy | FlightsDealNow"
+  description="Review the FlightsDealNow cancellation and refund policy, including airline rules, refund requests, and applicable conditions."
+  path="/cancellation-refund"
+/>
+
+
 const CancellationRefund = () => {
     return (
         <main className="bg-[#f7fafc]">

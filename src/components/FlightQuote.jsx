@@ -1,5 +1,7 @@
 import { useState } from "react"
 import { useLocation } from "react-router-dom"
+import SEO from "../components/SEO";
+
 
 const emailConfig = {
   serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -39,6 +41,11 @@ export default function FlightQuote() {
   if (!state) return <div className="mx-auto max-w-3xl px-5 py-24 text-center"><h1 className="text-4xl font-black">Start your flight search</h1><p className="mt-4 text-slate-500">Please return to the homepage and search for your route first.</p><a href="/" className="mt-7 inline-block rounded-full bg-blue-600 px-6 py-3 font-bold text-white">Back to Search</a></div>
 
   return <section className="mx-auto max-w-7xl px-5 py-12 lg:px-8">
+    <SEO
+      title="Request a Flight Quote | FlightsDealNow"
+      description="Review your selected trip details and submit your information to request a personalized flight quote from FlightsDealNow."
+      path="/flight-quote"
+    />
     <div className="grid overflow-hidden rounded-[36px] bg-white shadow-2xl shadow-slate-200 lg:grid-cols-[.85fr_1.15fr]">
       <aside className="relative min-h-[420px] overflow-hidden bg-slate-950 p-8 text-white sm:p-12">
         <div className="absolute inset-0 bg-[url('/hero-plane.jpg')] bg-cover bg-center opacity-30" />

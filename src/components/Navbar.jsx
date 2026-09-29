@@ -5,8 +5,8 @@ const PHONE = "1+1-888-348-7083"
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
   const links = [
-    ["Flights", "/#flight-search"], ["Deals", "/#deals"],
-    ["Destinations", "/#destinations"], ["About", "/about-us"], ["Contact", "/contact-us"]
+    ["Flights", "/#flight-search"], ["Deals", "/deals"],
+    ["Destinations", "/destinations"], ["About", "/about-us"], ["Contact", "/contact-us"]
   ]
   return (
     <>

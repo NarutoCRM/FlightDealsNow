@@ -1,10 +1,17 @@
 import { useState } from "react"
+import SEO from "./SEO";
+
 
 const PHONE = "+1-888-348-7083"
 const DISPLAY_PHONE = "+1-888-348-7083"
 const EMAIL = "support@flightdealsnow.com"
 
 export default function ContactUs() {
+    <SEO
+  title="Contact FlightsDealNow | Flight Travel Support"
+  description="Contact FlightsDealNow for flight search assistance, travel questions, and personalized flight quote requests."
+  path="/contact-us"
+/>
     const [form, setForm] = useState({
         name: "",
         email: "",

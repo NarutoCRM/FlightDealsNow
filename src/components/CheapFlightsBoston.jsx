@@ -1,4 +1,6 @@
 import { useState } from "react"
+import SEO from "./SEO";
+
 
 const faqs = [
     {
@@ -46,6 +48,11 @@ const faqs = [
 function SectionTitle({ eyebrow, children }) {
     return (
         <div className="mb-7">
+            <SEO
+                title="Cheap Flights to Boston | FlightsDealNow"
+                description="Search flight options to Boston, compare travel dates and itinerary choices, and request a personalized flight quote."
+                path="/cheap-flights-boston"
+            />
             {eyebrow && (
                 <p className="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-cyan-600">
                     {eyebrow}

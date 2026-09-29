@@ -1,4 +1,12 @@
 import FlightSearch from "./FlightSearch";
+import SEO from "./SEO";
+
+
+<SEO
+  title="Alaska Airlines Flights | Search & Get a Quote | FlightsDealNow"
+  description="Search Alaska Airlines flight options and request a personalized flight quote based on your travel details."
+  path="/airlines/alaska-airlines"
+/>
 
 export default function AlaskaAirlines() {
     return (
@@ -10,7 +18,8 @@ export default function AlaskaAirlines() {
 
                 <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 pb-36 pt-24 lg:grid-cols-[.95fr_1.05fr] lg:px-8 lg:pb-44 lg:pt-32">
 
-                    <div className="max-w-3xl">
+                    <div
+                     className="max-w-3xl">
                         <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-cyan-300/20 bg-white/5 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-cyan-200">
                             <span className="h-2 w-2 rounded-full bg-cyan-300" />
                             Alaska Airlines Flight Search

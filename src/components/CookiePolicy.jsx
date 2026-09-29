@@ -1,11 +1,20 @@
+import SEO from "./SEO";
 import React from "react"
 
 const PHONE_NUMBER = "+1-888-348-7083"
 const DISPLAY_PHONE = "+1-888-348-7083"
 const EMAIL = "support@flightdealsnow.com"
 
+
+
 const Section = ({ number, title, children }) => (
+
     <section className="mb-12">
+        <SEO
+            title="Cookie Policy | FlightsDealNow"
+            description="Learn how FlightsDealNow uses cookies and similar technologies to support website functionality, analytics, and user experience."
+            path="/cookie-policy"
+        />
         <div className="mb-5 flex items-start gap-4">
             <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[#071a33] text-sm font-bold text-cyan-300">
                 {number}
@@ -23,6 +32,7 @@ const Section = ({ number, title, children }) => (
 )
 
 const BulletList = ({ items }) => (
+
     <ul className="space-y-3 pl-5 text-[15px] leading-7 text-slate-600">
         {items.map((item, index) => (
             <li key={index} className="pl-1 marker:text-cyan-500">

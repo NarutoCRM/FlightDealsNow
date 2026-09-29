@@ -1,4 +1,6 @@
 import { useState } from "react"
+import SEO from "./SEO";
+
 
 export default function CheapFlightsLasVegas() {
     const [openFaq, setOpenFaq] = useState(0)
@@ -79,9 +81,13 @@ export default function CheapFlightsLasVegas() {
 
     return (
         <section className="overflow-hidden bg-[#f7fafc] text-slate-900">
-
+            <SEO
+                title="Cheap Flights to Los Angeles | FlightsDealNow"
+                description="Search flight options to Los Angeles, compare travel dates and itinerary choices, and request a personalized flight quote."
+                path="/cheap-flights-los-angeles"
+            />
             {/* HERO */}
-            <div className="relative isolate min-h-[620px] overflow-hidden bg-[#071a33]">
+            <div className="relative isolate min-h-620px overflow-hidden bg-[#071a33]">
 
                 <div
                     className="absolute inset-0 bg-cover bg-center"

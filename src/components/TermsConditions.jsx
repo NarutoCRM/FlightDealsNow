@@ -1,4 +1,13 @@
+
+import SEO from "./SEO";
+
 const TermsConditions = () => {
+    <SEO
+  title="Terms & Conditions | FlightsDealNow"
+  description="Review the Terms and Conditions that apply to the use of FlightsDealNow and its travel services."
+  path="/terms-conditions"
+/>
+
     return (
         <main className="bg-white">
 

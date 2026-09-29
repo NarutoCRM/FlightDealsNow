@@ -1,4 +1,11 @@
 import FlightSearch from "./FlightSearch";
+import SEO from "./SEO"; 
+
+<SEO
+  title="Spirit Airlines Flights | Search & Get a Quote | FlightsDealNow"
+  description="Search Spirit Airlines flight options, enter your travel details and request a personalized flight quote."
+  path="/airlines/spirit-airlines"
+/>
 
 const popularRoutes = [
     {

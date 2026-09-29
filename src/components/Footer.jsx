@@ -188,6 +188,12 @@ export default function Footer() {
             <a href="/disclaimer" className="hover:text-white">
               Disclaimer
             </a>
+            <a
+              href="/sitemap.xml"
+              className="text-sm text-white/60 transition hover:text-cyan-300"
+            >
+              Sitemap
+            </a>
           </div>
 
           <div className="mt-5 flex flex-col justify-between gap-3 text-xs text-slate-500 sm:flex-row">
@@ -196,6 +202,7 @@ export default function Footer() {
             </p>
 
             {/* <p>Operated by TravelFirst LLC</p> */}
+
           </div>
         </div>
       </div>

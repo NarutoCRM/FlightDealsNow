@@ -1,5 +1,12 @@
 import FlightSearch from "./FlightSearch";
+import SEO from "./SEO";
 
+
+<SEO
+  title="American Airlines Flights | Search & Get a Quote | FlightsDealNow"
+  description="Search American Airlines flight options, select your dates and travelers, and request a personalized flight quote."
+  path="/airlines/american-airlines"
+/> 
 export default function AmericanAirlines() {
     return (
         <div className="bg-[#f7fafc] text-slate-900">

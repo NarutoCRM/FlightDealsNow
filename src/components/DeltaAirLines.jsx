@@ -1,4 +1,11 @@
 import FlightSearch from "./FlightSearch";
+import SEO from "./SEO";
+
+<SEO
+  title="Delta Air Lines Flights | Search & Get a Quote | FlightsDealNow"
+  description="Search Delta Air Lines flight options, select your travel details and request a personalized flight quote."
+  path="/airlines/delta-air-lines"
+/>
 
 export default function DeltaAirLines() {
   return (
