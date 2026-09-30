@@ -78,7 +78,7 @@ function CookiePolicy() {
 
                     <div className="mt-7 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-300 backdrop-blur-md">
                         <span className="h-2 w-2 rounded-full bg-cyan-300" />
-                        Operated by TravelFirst LLC
+                        Operated by company-name
                     </div>
 
                 </div>
@@ -114,8 +114,7 @@ function CookiePolicy() {
 
                             <div className="space-y-4 text-[15px] leading-7 text-slate-600 sm:text-base">
                                 <p>
-                                    At FlightDealsNow, operated by TravelFirst
-                                    LLC, we use cookies and similar technologies
+                                    At FlightDealsNow, operated by company name , we use cookies and similar technologies
                                     to help our website work efficiently,
                                     understand how visitors use our website,
                                     improve the browsing experience, and support
@@ -524,7 +523,7 @@ function CookiePolicy() {
                         </p>
 
                         <p>
-                            TravelFirst LLC does not control how third-party
+                            company-name does not control how third-party
                             websites use cookies or other technologies. We
                             recommend reviewing their privacy policies before
                             providing personal information or continuing to
@@ -572,7 +571,7 @@ function CookiePolicy() {
                     {/* Section 13 */}
                     <Section number="13" title="Changes To This Cookie Policy">
                         <p>
-                            TravelFirst LLC may update this Cookie Policy from
+                            company-name may update this Cookie Policy from
                             time to time to reflect changes in our website,
                             technology, services, third-party providers,
                             advertising practices, or applicable legal

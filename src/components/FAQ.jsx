@@ -96,7 +96,7 @@ const FAQ = () => {
                         </p>
 
                         <a
-                            href="tel:1+1-888-348-7083"
+                            href="tel:+1-888-348-7083"
                             className="mt-3 block text-xl font-black text-cyan-300 transition hover:text-white"
                         >
                             +1-888-348-7083

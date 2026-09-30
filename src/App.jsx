@@ -66,8 +66,8 @@ function Home() {
   return (
     <Layout>
       <SEO
-        title="FlightsDealNow | Search Flights & Get a Free Quote"
-        description="Search flights, compare travel options, and request a personalized flight quote with FlightsDealNow."
+        title="Flight Deals & Cheap Flights | FlightDealsNow"
+        description="Search flight deals and compare available airfare options. Find cheap flights, explore destinations, and request a flight quote with FlightDealsNow."
         path="/"
       />
       <Hero />

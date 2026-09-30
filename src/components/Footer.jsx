@@ -1,5 +1,8 @@
 const PHONE = "+1-888-348-7083"
-// + 1 - 888 - 348 - 7083
+import FloatingCall from "./FloatingCall";
+import TrustpilotButton from "./TrustpilotButton";
+
+
 
 export default function Footer() {
   return (
@@ -131,6 +134,8 @@ export default function Footer() {
             </div>
           </div>
         </div>
+
+        <FloatingCall />
         {/* Payment Methods */}
         <div className="mt-8 border-t border-white/10 pt-6">
           <div className="flex flex-wrap items-center gap-4">
@@ -165,9 +170,35 @@ export default function Footer() {
               </span>
             </div>
           </div>
+
+        </div>
+        {/* Disclaimer */}
+        <br />
+
+        <div className="mx-auto max-w-7xl px-5 pb-8 sm:px-6 lg:px-8">
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-5 sm:p-6">
+            <p className="text-xs font-medium leading-6 text-white/60 sm:text-sm">
+              <span className="font-bold text-white/80">Disclaimer:</span>{" "}
+              FlightDealsNow.com is an independent travel agent and is not affiliated
+              with any airline, OTA, or third-party travel provider. All fares are
+              sourced from third parties and are dynamic, subject to change, and not
+              guaranteed until actual booking and confirmation. Final prices and
+              availability should be verified at the time of booking.
+            </p>
+          </div>
+        </div>
+        {/* Trustpilot */}
+        <div className="mx-auto max-w-7xl px-5 pb-8 sm:px-6 lg:px-8">
+          <div className="flex justify-center">
+            <div className="w-full max-w-md rounded-2xl bg-white p-4 shadow-lg">
+              <TrustpilotButton />
+            </div>
+          </div>
         </div>
         {/* Legal Links */}
+
         <div className="mt-8 border-t border-white/10 pt-6">
+
           <div className="flex flex-wrap gap-x-5 gap-y-2 text-xs text-slate-500">
             <a href="/privacy-policy" className="hover:text-white">
               Privacy Policy
@@ -194,6 +225,7 @@ export default function Footer() {
             >
               Sitemap
             </a>
+            {/* <a href=""><TrustpilotButton /></a> */}
           </div>
 
           <div className="mt-5 flex flex-col justify-between gap-3 text-xs text-slate-500 sm:flex-row">
@@ -201,7 +233,7 @@ export default function Footer() {
               © {new Date().getFullYear()} FlightDealsNow. All rights reserved.
             </p>
 
-            {/* <p>Operated by TravelFirst LLC</p> */}
+            {/* <p>Operated by company-name</p> */}
 
           </div>
         </div>

@@ -1,5 +1,5 @@
 import { useState } from "react"
-import SEO from "./SEO";
+import SEO from "../components/SEO";
 
 
 const faqs = [
@@ -112,8 +112,8 @@ function CheapFlightsNewYork() {
     return (
         <main className="overflow-hidden bg-[#f7fafc] text-slate-900">
             <SEO
-                title="Cheap Flights to New York | FlightsDealNow"
-                description="Explore flight options to New York, compare travel dates and airports, and request a personalized flight quote with FlightsDealNow."
+                title="Cheap Flights to New York | Flight Deals | FlightDealsNow"
+                description="Find cheap flights to New York and explore available airfare options. Compare flight deals and request a quote with FlightDealsNow."
                 path="/cheap-flights-new-york"
             />
 

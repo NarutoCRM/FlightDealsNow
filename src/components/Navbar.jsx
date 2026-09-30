@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const PHONE = "1+1-888-348-7083"
+const PHONE = "+1-888-348-7083";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -13,11 +13,11 @@ export default function Navbar() {
       {/* MOBILE STICKY CALL BAR */}
       <div className="fixed inset-x-0 top-0 z-[100] block border-b border-white/10 bg-[#071a33] shadow-lg md:hidden">
         <a
-          href="tel:8883487083"
+          href="tel:+1-888-348-7083"
           className="flex min-h-[44px] items-center justify-center gap-2 px-4 text-sm font-bold text-white"
         >
           <span className="text-cyan-300">☎</span>
-          <span>Call Us: 888-348-7083</span>
+          <span>Call Us: +1-888-348-7083</span>
         </a>
       </div>
       <header className="sticky top-[44px] md:top-0 z-50 border-b border-white/20 bg-white/10 opacity-90 backdrop-blur-xl">

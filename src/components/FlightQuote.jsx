@@ -99,6 +99,13 @@ export default function FlightQuote() {
   if (!state) {
     return (
       <div className="mx-auto max-w-3xl px-5 py-24 text-center">
+
+        <SEO
+          title="Request a Flight Quote | FlightDealsNow"
+          description="Request a flight quote from FlightDealsNow. Submit your travel details and receive available flight options and pricing information."
+          path="/flight-quote"
+        />
+
         <h1 className="text-4xl font-black">
           Start your flight search
         </h1>
@@ -121,9 +128,9 @@ export default function FlightQuote() {
   return (
     <section className="mx-auto max-w-7xl px-5 py-12 lg:px-8">
       <SEO
-        title="Request a Flight Quote | FlightsDealNow"
-        description="Review your selected trip details and submit your information to request a personalized flight quote from FlightsDealNow."
-        path="/flight-quote"
+        title="Contact FlightDealsNow | Flight Assistance & Quotes"
+        description="Contact FlightDealsNow for flight assistance, travel questions, and quote requests. Get help with your flight search and booking inquiry."
+        path="/contact-us"
       />
 
       <div className="grid overflow-hidden rounded-[36px] bg-white shadow-2xl shadow-slate-200 lg:grid-cols-[.85fr_1.15fr]">
@@ -159,10 +166,10 @@ export default function FlightQuote() {
             </div>
 
             <a
-              href="tel:8883487083"
+              href="tel:+1-888-348-7083"
               className="mt-10 inline-flex w-fit rounded-full bg-white px-6 py-3 text-sm font-black text-slate-950"
             >
-              ☎ Call 888-348-7083
+              ☎ Call +1-888-348-7083
             </a>
 
           </div>
@@ -284,6 +291,7 @@ export default function FlightQuote() {
                 value={form.phone}
                 onChange={update}
                 placeholder="Your phone number"
+                maxLength={13}
                 autoComplete="tel"
                 className="h-13 w-full rounded-2xl border border-slate-200 px-4 outline-none focus:border-blue-400 focus:ring-4 focus:ring-blue-100"
               />

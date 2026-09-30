@@ -1,9 +1,10 @@
 import SEO from "./SEO";
 
 
-const AboutUs = () => {<SEO
-  title="About FlightsDealNow | Your Flight Search & Travel Support"
-  description="Learn more about FlightsDealNow and how we help travelers search flights and request personalized travel quotes."
+const AboutUs = () => {
+<SEO
+  title="About FlightDealsNow | Independent Travel Agent"
+  description="Learn about FlightDealsNow, an independent travel agent helping travelers search flight options and request travel quotes."
   path="/about-us"
 />
   return (

@@ -107,8 +107,8 @@ function CheapFlightsParis() {
   return (
     <main className="overflow-hidden bg-[#f7fafc] text-slate-900">
       <SEO
-        title="Cheap Flights to Paris | FlightsDealNow"
-        description="Explore flight options to Paris, compare travel dates and airports, and request a personalized flight quote through FlightsDealNow."
+        title="Cheap Flights to Paris | Flight Deals | FlightDealsNow"
+        description="Find cheap flights to Paris and explore available airfare options. Compare flight deals and request a quote with FlightDealsNow."
         path="/cheap-flights-paris"
       />
       {/* HERO */}

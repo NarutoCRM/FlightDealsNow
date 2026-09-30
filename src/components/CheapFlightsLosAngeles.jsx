@@ -82,8 +82,8 @@ export default function CheapFlightsLasVegas() {
     return (
         <section className="overflow-hidden bg-[#f7fafc] text-slate-900">
             <SEO
-                title="Cheap Flights to Los Angeles | FlightsDealNow"
-                description="Search flight options to Los Angeles, compare travel dates and itinerary choices, and request a personalized flight quote."
+                title="Cheap Flights to Los Angeles | Flight Deals | FlightDealsNow"
+                description="Find cheap flights to Los Angeles and explore available airfare options. Compare flight deals and request a quote with FlightDealsNow."
                 path="/cheap-flights-los-angeles"
             />
             {/* HERO */}

@@ -2,9 +2,9 @@
 import SEO from "./SEO";
 
 <SEO
-  title="Cancellation & Refund Policy | FlightsDealNow"
-  description="Review the FlightsDealNow cancellation and refund policy, including airline rules, refund requests, and applicable conditions."
-  path="/cancellation-refund"
+    title="Cancellation & Refund Policy | FlightsDealNow"
+    description="Review the FlightsDealNow cancellation and refund policy, including airline rules, refund requests, and applicable conditions."
+    path="/cancellation-refund"
 />
 
 
@@ -84,7 +84,7 @@ const CancellationRefund = () => {
                         <div className="space-y-5 text-sm leading-7 text-gray-600 sm:text-base">
 
                             <p>
-                                At FlightDealsNow, operated by TravelFirst LLC,
+                                At FlightDealsNow, operated by company-name,
                                 we understand that travel plans may change
                                 unexpectedly. Our goal is to make the
                                 cancellation and refund process as clear as
@@ -579,7 +579,7 @@ const CancellationRefund = () => {
                     <PolicySection title="15. Updates To This Policy">
 
                         <p>
-                            TravelFirst LLC may update this Cancellation & Refund
+                            company-name may update this Cancellation & Refund
                             Policy when necessary to reflect changes in airline
                             policies, our services, business practices, or
                             applicable laws.

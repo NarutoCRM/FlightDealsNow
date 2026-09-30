@@ -49,8 +49,8 @@ function SectionTitle({ eyebrow, children }) {
     return (
         <div className="mb-7">
             <SEO
-                title="Cheap Flights to Boston | FlightsDealNow"
-                description="Search flight options to Boston, compare travel dates and itinerary choices, and request a personalized flight quote."
+                title="Cheap Flights to Boston | Flight Deals | FlightDealsNow"
+                description="Find cheap flights to Boston and explore available airfare options. Compare flight deals and request a quote with FlightDealsNow."
                 path="/cheap-flights-boston"
             />
             {eyebrow && (

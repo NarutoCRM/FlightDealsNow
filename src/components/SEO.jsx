@@ -1,11 +1,14 @@
 import { Helmet } from "react-helmet-async";
 
+const SITE_URL = "https://flightdealsnow.com";
+const SITE_NAME = "FlightDealsNow";
+
 export default function SEO({
   title,
   description,
   path = "/",
 }) {
-  const canonicalUrl = `https://flightdealsnow.com${path}`;
+  const canonicalUrl = `${SITE_URL}${path}`;
 
   return (
     <Helmet>
@@ -16,11 +19,6 @@ export default function SEO({
         content={description}
       />
 
-      <meta
-        name="robots"
-        content="index, follow"
-      />
-
       <link
         rel="canonical"
         href={canonicalUrl}
@@ -29,11 +27,6 @@ export default function SEO({
       <meta
         property="og:type"
         content="website"
-      />
-
-      <meta
-        property="og:site_name"
-        content="FlightsDealNow"
       />
 
       <meta
@@ -52,8 +45,8 @@ export default function SEO({
       />
 
       <meta
-        property="og:image"
-        content="https://flightdealsnow.com/og-image.jpg"
+        property="og:site_name"
+        content={SITE_NAME}
       />
 
       <meta
@@ -69,11 +62,6 @@ export default function SEO({
       <meta
         name="twitter:description"
         content={description}
-      />
-
-      <meta
-        name="twitter:image"
-        content="https://flightdealsnow.com/og-image.jpg"
       />
     </Helmet>
   );
