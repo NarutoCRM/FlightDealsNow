@@ -84,7 +84,7 @@ const CancellationRefund = () => {
                         <div className="space-y-5 text-sm leading-7 text-gray-600 sm:text-base">
 
                             <p>
-                                At FlightDealsNow, operated by company-name,
+                                At FlightDealsNow, operated by Flightdealsnow.com,
                                 we understand that travel plans may change
                                 unexpectedly. Our goal is to make the
                                 cancellation and refund process as clear as
@@ -579,7 +579,7 @@ const CancellationRefund = () => {
                     <PolicySection title="15. Updates To This Policy">
 
                         <p>
-                            company-name may update this Cancellation & Refund
+                            Flightdealsnow.com may update this Cancellation & Refund
                             Policy when necessary to reflect changes in airline
                             policies, our services, business practices, or
                             applicable laws.

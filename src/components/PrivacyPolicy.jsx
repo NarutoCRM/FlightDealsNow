@@ -37,7 +37,7 @@ const PrivacyPolicy = () => {
 
             <p>
               At FlightDealsNow, your privacy matters to us. This Privacy Policy
-              explains how company-name (“company-name,” “FlightDealsNow,”
+              explains how Flightdealsnow.com (“Flightdealsnow.com,” “FlightDealsNow,”
               “we,” “us,” or “our”) collects, uses, shares, and protects
               information when you visit or use our website, contact us,
               request travel information, or use our flight search and
@@ -95,7 +95,7 @@ const PrivacyPolicy = () => {
           <PolicySection title="2. How We Use Your Information">
 
             <p>
-              company-name may use the information we collect for legitimate
+              Flightdealsnow.com may use the information we collect for legitimate
               business and service-related purposes, including:
             </p>
 
@@ -162,7 +162,7 @@ const PrivacyPolicy = () => {
             </PolicySubsection>
 
             <PolicySubsection title="Business transactions:">
-              If company-name is involved in a merger, acquisition,
+              If Flightdealsnow.com is involved in a merger, acquisition,
               restructuring, financing, sale of assets, or similar business
               transaction, personal information may be transferred as part of
               that transaction, subject to applicable legal requirements.
@@ -209,7 +209,7 @@ const PrivacyPolicy = () => {
             </p>
 
             <p>
-              company-name does not control the privacy practices of
+              Flightdealsnow.com does not control the privacy practices of
               independent third-party websites. We encourage you to review the
               privacy policy of any external website before providing personal
               information.
@@ -346,7 +346,7 @@ const PrivacyPolicy = () => {
             <p>
               If you have questions, concerns, or requests regarding this
               Privacy Policy or how your information is handled, please contact
-              company-name:
+              Flightdealsnow.com:
             </p>
 
             <div className="mt-5 rounded-xl bg-[#f5f9fd] border border-gray-200 p-5 space-y-3 text-sm">

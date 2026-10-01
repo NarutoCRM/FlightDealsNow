@@ -233,7 +233,7 @@ export default function Footer() {
               © {new Date().getFullYear()} FlightDealsNow. All rights reserved.
             </p>
 
-            {/* <p>Operated by company-name</p> */}
+            {/* <p>Operated by Flightdealsnow.com</p> */}
 
           </div>
         </div>

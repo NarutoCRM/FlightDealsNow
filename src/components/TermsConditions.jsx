@@ -43,8 +43,8 @@ const TermsConditions = () => {
                         </p>
 
                         <p>
-                            FlightDealsNow is operated by company-name
-                            (“company-name,” “FlightDealsNow,” “we,” “us,” or “our”).
+                            FlightDealsNow is operated by Flightdealsnow.com
+                            (“Flightdealsnow.com,” “FlightDealsNow,” “we,” “us,” or “our”).
                             By accessing or using our website, submitting an inquiry,
                             requesting travel assistance, or using any information or
                             services available through the website, you agree to be
@@ -57,7 +57,7 @@ const TermsConditions = () => {
                     {/* 1 */}
                     <TermsSection title="1. About FlightDealsNow">
                         <p>
-                            FlightDealsNow is a travel website operated by company-name
+                            FlightDealsNow is a travel website operated by Flightdealsnow.com
                             that provides users with access to travel information, flight
                             search assistance, booking-related support, and other
                             travel-related resources.
@@ -324,7 +324,7 @@ const TermsConditions = () => {
                         <p>
                             Unless otherwise stated, content appearing on FlightDealsNow,
                             including text, graphics, logos, designs, images, layouts,
-                            and other materials, is owned by or licensed to company name and may be protected by applicable intellectual property
+                            and other materials, is owned by or licensed to Flightdealsnow.com and may be protected by applicable intellectual property
                             laws.
                         </p>
 
@@ -344,7 +344,7 @@ const TermsConditions = () => {
                         </p>
 
                         <p>
-                            These websites are operated independently of company-name.
+                            These websites are operated independently of Flightdealsnow.com.
                             We are not responsible for the availability, content,
                             security, privacy practices, policies, or services of
                             third-party websites.
@@ -359,7 +359,7 @@ const TermsConditions = () => {
                     {/* 13 */}
                     <TermsSection title="13. Limitation of Liability">
                         <p>
-                            To the extent permitted by applicable law, company-name
+                            To the extent permitted by applicable law, Flightdealsnow.com
                             and FlightDealsNow are not responsible for losses or damages
                             arising from circumstances outside our reasonable control,
                             including airline schedule changes, delays, cancellations,
@@ -386,7 +386,7 @@ const TermsConditions = () => {
                     <TermsSection title="14. Indemnification">
                         <p>
                             To the extent permitted by law, you agree to defend,
-                            indemnify, and hold harmless company-name, FlightDealsNow,
+                            indemnify, and hold harmless Flightdealsnow.com, FlightDealsNow,
                             and their respective officers, employees, contractors, and
                             service providers from claims, liabilities, damages, losses,
                             costs, and expenses arising from your misuse of the website,
@@ -412,7 +412,7 @@ const TermsConditions = () => {
                     {/* 16 */}
                     <TermsSection title="16. Changes To These Terms">
                         <p>
-                            company-name may update these Terms from time to time to
+                            Flightdealsnow.com may update these Terms from time to time to
                             reflect changes to our services, website, business practices,
                             or applicable legal requirements.
                         </p>

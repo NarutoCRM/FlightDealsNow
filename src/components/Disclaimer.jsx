@@ -58,7 +58,7 @@ function Disclaimer() {
           </p>
 
           <p className="mt-5 text-sm font-medium text-slate-400">
-            Operated by company-name
+            Operated by Flightdealsnow.com
           </p>
         </div>
       </section>
@@ -70,7 +70,7 @@ function Disclaimer() {
           {/* Introduction */}
           <div className="mb-10 border-b border-slate-200 pb-8">
             <p className="text-[15px] leading-7 text-slate-600 sm:text-base">
-              FlightDealsNow is operated by company-name and provides
+              FlightDealsNow is operated by Flightdealsnow.com and provides
               travel-related information, flight search assistance, booking
               support, and related services to customers.
             </p>
@@ -192,7 +192,7 @@ function Disclaimer() {
             </p>
 
             <p>
-              company-name does not control the operations, policies,
+              Flightdealsnow.com does not control the operations, policies,
               availability, or decisions of independent third-party providers
               and is not responsible for changes made by them that are outside
               our reasonable control.
@@ -302,7 +302,7 @@ function Disclaimer() {
 
             <p>
               These external websites are not operated or controlled by
-              company-name. We are not responsible for the content,
+              Flightdealsnow.com. We are not responsible for the content,
               availability, security, accuracy, privacy practices, or policies
               of third-party websites.
             </p>
@@ -315,7 +315,7 @@ function Disclaimer() {
 
           <Section number="11" title="Limitation of Responsibility">
             <p>
-              To the extent permitted by applicable law, company-name and
+              To the extent permitted by applicable law, Flightdealsnow.com and
               FlightDealsNow are not responsible for losses, costs, delays,
               disruptions, or other consequences resulting from circumstances
               outside our reasonable control, including airline cancellations,
@@ -349,7 +349,7 @@ function Disclaimer() {
 
           <Section number="13" title="Changes To This Disclaimer">
             <p>
-              company-name may update this Disclaimer when necessary to
+              Flightdealsnow.com may update this Disclaimer when necessary to
               reflect changes to our website, services, business practices, or
               applicable requirements.
             </p>
