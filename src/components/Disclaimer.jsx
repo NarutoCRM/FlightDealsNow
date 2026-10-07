@@ -371,8 +371,7 @@ function Disclaimer() {
               <div className="space-y-3 text-sm leading-6 text-slate-700">
                 <p>
                   <strong className="text-slate-900">Address:</strong>{" "}
-                  FIVE GREENTREE CENTRE, 525 ROUTE 73 NORTH STE 104 MARLTON,
-                  NEW JERSEY 08053-0805 United States
+                  30 N Gould St, Sheridan, WY 82801, USA
                 </p>
 
                 <p>

@@ -353,8 +353,7 @@ const PrivacyPolicy = () => {
 
               <p>
                 <strong className="text-[#123b7a]">Address:</strong>{" "}
-                FIVE GREENTREE CENTRE, 525 ROUTE 73 NORTH STE 104 MARLTON,
-                NEW JERSEY 08053-0805 United States
+                30 N Gould St, Sheridan, WY 82801, USA
               </p>
 
               <p>

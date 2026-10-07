@@ -611,13 +611,7 @@ function CookiePolicy() {
                                         </p>
 
                                         <p className="mt-1 text-sm leading-6 text-slate-300">
-                                            FIVE GREENTREE CENTRE,
-                                            <br />
-                                            525 ROUTE 73 NORTH STE 104
-                                            <br />
-                                            MARLTON, NEW JERSEY 08053-0805
-                                            <br />
-                                            United States
+                                            30 N Gould St, Sheridan, WY 82801, USA
                                         </p>
                                     </div>
                                 </div>
