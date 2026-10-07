@@ -8,49 +8,11 @@ const FloatingCall = () => {
     <a
       href={`tel:${PHONE_NUMBER}`}
       aria-label={`Call an Expert ${DISPLAY_PHONE}`}
-      className="
-        fixed
-        left-1/2
-        bottom-5
-        z-[9997]
-        -translate-x-1/2
-        flex
-        w-[88%]
-        max-w-[360px]
-        items-center
-        justify-center
-        gap-5
-        rounded-full
-        bg-[#1687d9]
-        px-5
-        py-3
-        text-white
-        shadow-xl
-        transition-all
-        duration-300
-        hover:bg-[#123b7a]
-        hover:-translate-y-1
-        md:hidden
-      "
+      className=" fixed left-1/2 bottom-5 z-30 -translate-x-1/2 flex w-[88%] max-w-[360px] items-center justify-center gap-5 rounded-full bg-[#1687d9] px-5 py-3 text-white shadow-xl transition-all duration-300 hover:bg-[#123b7a] hover:-translate-y-1 md:hidden"
     >
       {/* Phone Icon */}
-      <span
-        className="
-          flex
-          h-14
-          w-14
-          shrink-0
-          items-center
-          justify-center
-          rounded-full
-          bg-white/15
-        "
-      >
-        <img
-          src={img}
-          alt=""
-          className="h-9 w-9 object-contain"
-        />
+      <span className=" flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-white/15">
+        <img src={img} alt="" className="h-9 w-9 object-contain" />
       </span>
 
       {/* Text */}
