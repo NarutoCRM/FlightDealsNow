@@ -5,7 +5,7 @@ import SEO from "./SEO";
 const PHONE = "+1-888-348-7083"
 const DISPLAY_PHONE = "+1-888-348-7083"
 const EMAIL = "support@flightdealsnow.com"
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL  ;
 
 export default function ContactUs() {
 
