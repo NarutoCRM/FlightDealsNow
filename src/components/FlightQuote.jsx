@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import SEO from "../components/SEO";
 
 const API_BASE_URL =
@@ -7,6 +7,7 @@ const API_BASE_URL =
 
 export default function FlightQuote() {
   const { state } = useLocation();
+  const navigate = useNavigate();
 
   const [form, setForm] = useState({
     name: "",
@@ -73,7 +74,7 @@ export default function FlightQuote() {
         );
       }
 
-      setStatus("success");
+      navigate("/thank-you");
 
       setForm({
         name: "",
@@ -296,16 +297,6 @@ export default function FlightQuote() {
                 className="h-13 w-full rounded-2xl border border-slate-200 px-4 outline-none focus:border-blue-400 focus:ring-4 focus:ring-blue-100"
               />
             </div>
-
-            {/* SUCCESS */}
-
-            {status === "success" && (
-              <div className="rounded-2xl bg-emerald-50 p-4 text-sm font-bold text-emerald-700">
-                ✓ Your quote request has been sent
-                successfully. Our travel team will contact
-                you shortly.
-              </div>
-            )}
 
             {/* ERROR */}
 

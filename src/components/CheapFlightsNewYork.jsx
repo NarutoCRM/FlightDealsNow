@@ -1,8 +1,9 @@
 import { useState } from "react"
 import SEO from "../components/SEO";
+import { destinationContent, destinationFromPath } from "./destinationContent";
 
 
-const faqs = [
+const newYorkFaqs = [
     {
         question: "How can I find affordable flights to New York City?",
         answer:
@@ -45,7 +46,7 @@ const faqs = [
     },
 ]
 
-const thingsToDo = [
+const newYorkThingsToDo = [
     "Times Square",
     "Central Park",
     "Statue of Liberty",
@@ -60,7 +61,7 @@ const thingsToDo = [
     "9/11 Memorial & Museum",
 ]
 
-const bookingTips = [
+const newYorkBookingTips = [
     "Give yourself some flexibility. If you can move your trip by a day or two, compare those dates.",
     "Check different airports. JFK, LGA, and EWR don't always have the same flight options.",
     "Compare round-trip and one-way fares. Depending on your plans, either option could make more sense.",
@@ -69,7 +70,7 @@ const bookingTips = [
     "Most importantly, compare the complete itinerary, not just the number on the fare.",
 ]
 
-const seasons = [
+const newYorkSeasons = [
     {
         title: "Spring",
         text: "Spring is a comfortable time to explore the city on foot. Parks become greener, outdoor spaces start filling up, and the weather is generally pleasant for sightseeing.",
@@ -88,7 +89,7 @@ const seasons = [
     },
 ]
 
-const airports = [
+const newYorkAirports = [
     {
         code: "JFK",
         name: "John F. Kennedy International Airport",
@@ -106,15 +107,19 @@ const airports = [
     },
 ]
 
-function CheapFlightsNewYork() {
+function CheapFlightsNewYork({ destination = destinationFromPath("cheap-flights-to-new-york-city") }) {
+    const { name, path, isNewYork } = destination;
+    const { faqs, thingsToDo, bookingTips, seasons, airports } = isNewYork
+        ? { faqs: newYorkFaqs, thingsToDo: newYorkThingsToDo, bookingTips: newYorkBookingTips, seasons: newYorkSeasons, airports: newYorkAirports }
+        : destinationContent(name);
     const [openFaq, setOpenFaq] = useState(0)
 
     return (
         <main className="overflow-hidden bg-[#f7fafc] text-slate-900">
             <SEO
-                title="Cheap Flights to New York | Flight Deals | FlightDealsNow"
-                description="Find cheap flights to New York and explore available airfare options. Compare flight deals and request a quote with FlightDealsNow."
-                path="/cheap-flights-new-york"
+                title={`Cheap Flights to ${name} | Flight Deals | FlightDealsNow`}
+                description={`Planning travel to ${name}? Review flight planning tips and request a quote with FlightDealsNow. Flight options and fares require confirmation for your travel dates.`}
+                path={path}
             />
 
             {/* HERO */}
@@ -137,22 +142,14 @@ function CheapFlightsNewYork() {
                     <div className="max-w-4xl">
 
                         <div className="inline-flex items-center gap-2 rounded-full border border-cyan-300/30 bg-white/10 px-4 py-2 text-sm font-bold text-cyan-200 backdrop-blur-md">
-                            <span className="h-2 w-2 rounded-full bg-cyan-300" />
-                            FlightDealsNow · New York
-                        </div>
+                            <span className="h-2 w-2 rounded-full bg-cyan-300" />{isNewYork ? "FlightDealsNow · New York" : `FlightDealsNow · ${name}`}</div>
 
                         <h1 className="mt-7 text-5xl font-black leading-[1.03] tracking-tight text-white sm:text-6xl lg:text-7xl">
                             Cheap Flights to
-                            <span className="block text-cyan-300">
-                                New York City
-                            </span>
+                            <span className="block text-cyan-300">{isNewYork ? "New York City" : `${name}`}</span>
                         </h1>
 
-                        <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200 sm:text-xl">
-                            Explore available flights to New York City, compare
-                            different schedules and travel options, and find an
-                            itinerary that makes sense for your trip and budget.
-                        </p>
+                        <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200 sm:text-xl">{isNewYork ? "Explore available flights to New York City, compare different schedules and travel options, and find an itinerary that makes sense for your trip and budget." : `Plan your trip to ${name} and request a quote for your departure location and travel dates. Flight availability, routes, and fares require confirmation.`}</p>
 
                         <div className="mt-9 flex flex-col gap-3 sm:flex-row">
 
@@ -165,24 +162,16 @@ function CheapFlightsNewYork() {
                             </a>
 
                             <a
-                                href="#new-york-guide"
+                                href="#destination-guide"
                                 className="inline-flex items-center justify-center rounded-2xl border border-white/20 bg-white/10 px-7 py-4 font-bold text-white backdrop-blur-md transition hover:bg-white/15"
-                            >
-                                Explore New York
-                            </a>
+                            >{isNewYork ? "Explore New York" : `Explore ${name}`}</a>
 
                         </div>
 
                         <div className="mt-10 flex flex-wrap gap-3 text-sm text-slate-300">
-                            <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
-                                JFK
-                            </span>
-                            <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
-                                LGA
-                            </span>
-                            <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
-                                EWR
-                            </span>
+                            <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">{isNewYork ? "JFK" : "Travel dates"}</span>
+                            <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">{isNewYork ? "LGA" : "Passengers"}</span>
+                            <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">{isNewYork ? "EWR" : "Preferences"}</span>
                             <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
                                 One-way & Round-trip
                             </span>
@@ -194,7 +183,7 @@ function CheapFlightsNewYork() {
 
             {/* INTRO */}
             <section
-                id="new-york-guide"
+                id="destination-guide"
                 className="mx-auto max-w-7xl px-5 py-20 sm:px-6 lg:px-8"
             >
 
@@ -202,37 +191,15 @@ function CheapFlightsNewYork() {
 
                     <div>
 
-                        <p className="text-sm font-black uppercase tracking-[0.2em] text-blue-600">
-                            New York Flight Guide
-                        </p>
+                        <p className="text-sm font-black uppercase tracking-[0.2em] text-blue-600">{isNewYork ? "New York Flight Guide" : `${name} Flight Guide`}</p>
 
-                        <h2 className="mt-4 text-4xl font-black tracking-tight text-[#071a33] sm:text-5xl">
-                            Planning a trip to New York? Start here.
-                        </h2>
+                        <h2 className="mt-4 text-4xl font-black tracking-tight text-[#071a33] sm:text-5xl">{isNewYork ? "Planning a trip to New York? Start here." : `Planning a trip to ${name}? Start here.`}</h2>
 
-                        <p className="mt-6 text-lg leading-8 text-slate-600">
-                            New York City has a way of making you want to see it
-                            for yourself. Maybe you've always wanted to stand in
-                            Times Square at night, walk through Central Park, catch
-                            a Broadway show, or simply spend a few days exploring
-                            the city without a strict plan.
-                        </p>
+                        <p className="mt-6 text-lg leading-8 text-slate-600">{isNewYork ? "New York City has a way of making you want to see it for yourself. Maybe you've always wanted to stand in Times Square at night, walk through Central Park, catch a Broadway show, or simply spend a few days exploring the city without a strict plan." : `Planning a visit to ${name}? Start by choosing your travel dates, accommodation, and the activities you want to research.`}</p>
 
-                        <p className="mt-5 text-lg leading-8 text-slate-600">
-                            FlightDealsNow helps you explore available flights to
-                            New York City and compare different options before you
-                            book. You can look at one-way and round-trip flights,
-                            check different schedules, and choose an itinerary
-                            that makes sense for your trip and budget.
-                        </p>
+                        <p className="mt-5 text-lg leading-8 text-slate-600">{isNewYork ? "FlightDealsNow helps you explore available flights to New York City and compare different options before you book. You can look at one-way and round-trip flights, check different schedules, and choose an itinerary that makes sense for your trip and budget." : `Send FlightDealsNow your travel details to request a quote for ${name}. Include your departure location, dates, and preferences so current options can be checked.`}</p>
 
-                        <p className="mt-5 text-base leading-8 text-slate-600">
-                            And once you land, there's plenty waiting for you.
-                            New York isn't just about the famous landmarks. It's
-                            also the neighborhood coffee shop, a great slice of
-                            pizza, the Manhattan skyline, and discovering a street
-                            you didn't expect to love.
-                        </p>
+                        <p className="mt-5 text-base leading-8 text-slate-600">{isNewYork ? "And once you land, there's plenty waiting for you. New York isn't just about the famous landmarks. It's also the neighborhood coffee shop, a great slice of pizza, the Manhattan skyline, and discovering a street you didn't expect to love." : `Research ${name} using reliable local travel information before deciding what to include in your itinerary.`}</p>
 
                     </div>
 
@@ -242,26 +209,19 @@ function CheapFlightsNewYork() {
 
                             <div className="flex items-center justify-between">
 
-                                <span className="rounded-full bg-cyan-300/10 px-4 py-2 text-xs font-black uppercase tracking-widest text-cyan-300">
-                                    NYC
-                                </span>
+                                <span className="rounded-full bg-cyan-300/10 px-4 py-2 text-xs font-black uppercase tracking-widest text-cyan-300">{isNewYork ? "NYC" : "Plan your trip"}</span>
 
                                 <span className="text-3xl">✦</span>
 
                             </div>
 
-                            <h3 className="mt-8 text-3xl font-black">
-                                New York City
-                            </h3>
+                            <h3 className="mt-8 text-3xl font-black">{isNewYork ? "New York City" : `${name}`}</h3>
 
-                            <p className="mt-4 leading-7 text-slate-300">
-                                A city filled with iconic landmarks, neighborhoods,
-                                entertainment, food, museums, and experiences.
-                            </p>
+                            <p className="mt-4 leading-7 text-slate-300">{isNewYork ? "A city filled with iconic landmarks, neighborhoods, entertainment, food, museums, and experiences." : `Use this guide to organize your travel plans and questions before requesting a quote.`}</p>
 
                             <div className="mt-8 grid grid-cols-3 gap-3">
 
-                                {["JFK", "LGA", "EWR"].map((code) => (
+                                {(isNewYork ? ["JFK", "LGA", "EWR"] : ["Dates", "Travelers", "Cabin"]).map((code) => (
                                     <div
                                         key={code}
                                         className="rounded-2xl bg-white/10 p-4 text-center"
@@ -269,9 +229,7 @@ function CheapFlightsNewYork() {
                                         <p className="font-black text-cyan-300">
                                             {code}
                                         </p>
-                                        <p className="mt-1 text-xs text-slate-400">
-                                            Airport
-                                        </p>
+                                        <p className="mt-1 text-xs text-slate-400">{isNewYork ? "Airport" : "Preference"}</p>
                                     </div>
                                 ))}
 
@@ -290,13 +248,9 @@ function CheapFlightsNewYork() {
 
                     <div className="max-w-3xl">
 
-                        <p className="text-sm font-black uppercase tracking-[0.2em] text-blue-600">
-                            Discover New York
-                        </p>
+                        <p className="text-sm font-black uppercase tracking-[0.2em] text-blue-600">{isNewYork ? "Discover New York" : `Discover ${name}`}</p>
 
-                        <h2 className="mt-4 text-4xl font-black tracking-tight text-[#071a33] sm:text-5xl">
-                            Why is New York City so popular?
-                        </h2>
+                        <h2 className="mt-4 text-4xl font-black tracking-tight text-[#071a33] sm:text-5xl">{isNewYork ? "Why is New York City so popular?" : `Planning your visit to ${name}`}</h2>
 
                     </div>
 
@@ -304,47 +258,21 @@ function CheapFlightsNewYork() {
 
                         <div className="space-y-5 text-lg leading-8 text-slate-600">
 
-                            <p>
-                                There's a reason New York continues to attract
-                                travelers from all over the world.
-                            </p>
+                            <p>{isNewYork ? "There's a reason New York continues to attract travelers from all over the world." : `Build your ${name} itinerary around your interests and the time you have available.`}</p>
 
-                            <p>
-                                For first-time visitors, the city's biggest
-                                attractions are an obvious place to start.
-                                You can take a ferry toward the Statue of Liberty,
-                                see Manhattan from the top of the Empire State
-                                Building, walk across the Brooklyn Bridge, or
-                                experience the bright lights of Times Square.
-                            </p>
+                            <p>{isNewYork ? "For first-time visitors, the city's biggest attractions are an obvious place to start. You can take a ferry toward the Statue of Liberty, see Manhattan from the top of the Empire State Building, walk across the Brooklyn Bridge, or experience the bright lights of Times Square." : `Research local attractions and check their location, opening hours, and entry requirements before making plans.`}</p>
 
-                            <p>
-                                But New York becomes even more interesting when
-                                you move beyond the usual sightseeing list.
-                            </p>
+                            <p>{isNewYork ? "But New York becomes even more interesting when you move beyond the usual sightseeing list." : `Leave enough time for transport and breaks between activities in ${name}.`}</p>
 
                         </div>
 
                         <div className="space-y-5 text-lg leading-8 text-slate-600">
 
-                            <p>
-                                Spend an afternoon in Greenwich Village. Walk the
-                                High Line and explore Chelsea. Browse shops in SoHo.
-                                Have brunch somewhere in Brooklyn. Visit a museum
-                                when the weather isn't cooperating.
-                            </p>
+                            <p>{isNewYork ? "Spend an afternoon in Greenwich Village. Walk the High Line and explore Chelsea. Browse shops in SoHo. Have brunch somewhere in Brooklyn. Visit a museum when the weather isn't cooperating." : `Check local tourism resources for ideas that suit your interests and travel dates.`}</p>
 
-                            <p>
-                                In the evening, choose between a Broadway show,
-                                a rooftop view, live music, or a quiet dinner in
-                                a neighborhood restaurant.
-                            </p>
+                            <p>{isNewYork ? "In the evening, choose between a Broadway show, a rooftop view, live music, or a quiet dinner in a neighborhood restaurant." : `Confirm reservations and transport arrangements for any activities you choose.`}</p>
 
-                            <p className="font-bold text-[#071a33]">
-                                The best part? You don't have to fit everything
-                                into one trip. New York gives you plenty of
-                                reasons to come back.
-                            </p>
+                            <p className="font-bold text-[#071a33]">{isNewYork ? "The best part? You don't have to fit everything into one trip. New York gives you plenty of reasons to come back." : `Choose a manageable itinerary for ${name} rather than trying to fit everything into one visit.`}</p>
 
                         </div>
 
@@ -365,9 +293,7 @@ function CheapFlightsNewYork() {
                                 Compare Your Options
                             </p>
 
-                            <h2 className="mt-4 text-4xl font-black text-white sm:text-5xl">
-                                Find a flight to New York that fits your plans.
-                            </h2>
+                            <h2 className="mt-4 text-4xl font-black text-white sm:text-5xl">{isNewYork ? "Find a flight to New York that fits your plans." : `Request a flight quote for ${name} that fits your plans.`}</h2>
 
                             <p className="mt-6 text-lg leading-8 text-slate-300">
                                 Not every traveler has the same idea of a perfect
@@ -386,14 +312,21 @@ function CheapFlightsNewYork() {
 
                         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
 
-                            {[
+                            {(isNewYork ? [
                                 "One-way or round-trip itineraries",
                                 "Different flight schedules",
                                 "Domestic and international routes",
                                 "Available airline options",
                                 "Different fare choices",
                                 "Options based on your preferred travel dates",
-                            ].map((item, index) => (
+                            ] : [
+                                "One-way or round-trip preference",
+                                "Preferred departure and arrival times",
+                                "Departure location and destination",
+                                "Airline preferences to check",
+                                "Budget and baggage requirements",
+                                "Preferred travel dates and alternatives",
+                            ]).map((item, index) => (
 
                                 <div
                                     key={item}
@@ -436,15 +369,9 @@ function CheapFlightsNewYork() {
                             Plan Your Visit
                         </p>
 
-                        <h2 className="mt-4 text-4xl font-black tracking-tight text-[#071a33] sm:text-5xl">
-                            When is a good time to visit New York?
-                        </h2>
+                        <h2 className="mt-4 text-4xl font-black tracking-tight text-[#071a33] sm:text-5xl">{isNewYork ? "When is a good time to visit New York?" : `When is a good time to visit ${name}?`}</h2>
 
-                        <p className="mt-5 text-lg leading-8 text-slate-600">
-                            Honestly, there isn't one answer. New York changes
-                            with the seasons, and the best time for you depends
-                            on what you want to do.
-                        </p>
+                        <p className="mt-5 text-lg leading-8 text-slate-600">{isNewYork ? "Honestly, there isn't one answer. New York changes with the seasons, and the best time for you depends on what you want to do." : `The right time to visit ${name} depends on your preferences. Check local weather and events for the dates you are considering.`}</p>
 
                     </div>
 
@@ -494,15 +421,9 @@ function CheapFlightsNewYork() {
                             Explore The City
                         </p>
 
-                        <h2 className="mt-4 text-4xl font-black tracking-tight text-[#071a33] sm:text-5xl">
-                            Things to do in New York City
-                        </h2>
+                        <h2 className="mt-4 text-4xl font-black tracking-tight text-[#071a33] sm:text-5xl">{isNewYork ? "Things to do in New York City" : `Things to do in ${name}`}</h2>
 
-                        <p className="mt-5 text-lg leading-8 text-slate-600">
-                            You could visit New York several times and still have
-                            something left to see. If it's your first trip, these
-                            are some places worth putting on your list.
-                        </p>
+                        <p className="mt-5 text-lg leading-8 text-slate-600">{isNewYork ? "You could visit New York several times and still have something left to see. If it's your first trip, these are some places worth putting on your list." : `Use these planning steps to research activities in ${name}; they are not a verified list of local attractions.`}</p>
 
                     </div>
 
@@ -550,19 +471,11 @@ function CheapFlightsNewYork() {
                             Choose Your Airport
                         </p>
 
-                        <h2 className="mt-4 text-4xl font-black tracking-tight text-[#071a33] sm:text-5xl">
-                            Which airport should you choose for New York?
-                        </h2>
+                        <h2 className="mt-4 text-4xl font-black tracking-tight text-[#071a33] sm:text-5xl">{isNewYork ? "Which airport should you choose for New York?" : `Which airport should you choose for ${name}?`}</h2>
 
-                        <p className="mt-5 text-lg leading-8 text-slate-600">
-                            One thing travelers sometimes overlook when booking
-                            a New York flight is the airport.
-                        </p>
+                        <p className="mt-5 text-lg leading-8 text-slate-600">{isNewYork ? "One thing travelers sometimes overlook when booking a New York flight is the airport." : `Confirm your arrival airport and onward travel arrangements when planning a trip to ${name}.`}</p>
 
-                        <p className="mt-4 text-lg leading-8 text-slate-600">
-                            The city and surrounding area are served by three
-                            major airports.
-                        </p>
+                        <p className="mt-4 text-lg leading-8 text-slate-600">{isNewYork ? "The city and surrounding area are served by three major airports." : `Airport details and flight routes must be verified for your itinerary; this page does not establish service to ${name}.`}</p>
 
                     </div>
 
@@ -623,9 +536,7 @@ function CheapFlightsNewYork() {
                             Smart Flight Search
                         </p>
 
-                        <h2 className="mt-4 text-4xl font-black tracking-tight text-[#071a33] sm:text-5xl">
-                            A few tips before booking your New York flight
-                        </h2>
+                        <h2 className="mt-4 text-4xl font-black tracking-tight text-[#071a33] sm:text-5xl">{isNewYork ? "A few tips before booking your New York flight" : `A few tips before booking your ${name} flight`}</h2>
 
                         <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-slate-600">
                             Finding a suitable fare isn't always about booking on
@@ -667,30 +578,15 @@ function CheapFlightsNewYork() {
 
                 <div className="mx-auto max-w-5xl px-5 text-center sm:px-6 lg:px-8">
 
-                    <span className="inline-flex rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-2 text-xs font-black uppercase tracking-widest text-cyan-300">
-                        Your New York Journey
-                    </span>
+                    <span className="inline-flex rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-2 text-xs font-black uppercase tracking-widest text-cyan-300">{isNewYork ? "Your New York Journey" : `Your ${name} Journey`}</span>
 
-                    <h2 className="mt-6 text-4xl font-black text-white sm:text-5xl">
-                        Your New York journey starts here.
-                    </h2>
+                    <h2 className="mt-6 text-4xl font-black text-white sm:text-5xl">{isNewYork ? "Your New York journey starts here." : `Your ${name} journey starts here.`}</h2>
 
-                    <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-                        Maybe you're heading to New York for the first time.
-                        Maybe you've been before and already have a favorite
-                        neighborhood, restaurant, or view. Either way, there's
-                        always something new to discover.
-                    </p>
+                    <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-300">{isNewYork ? "Maybe you're heading to New York for the first time. Maybe you've been before and already have a favorite neighborhood, restaurant, or view. Either way, there's always something new to discover." : `Whether this is your first visit or a return trip, prepare your travel details for ${name} before requesting a quote.`}</p>
 
-                    <p className="mx-auto mt-4 max-w-3xl text-lg leading-8 text-slate-300">
-                        When you're ready to start planning, explore available
-                        flights to New York City with FlightDealsNow. Compare
-                        your options and find an itinerary that works for your trip.
-                    </p>
+                    <p className="mx-auto mt-4 max-w-3xl text-lg leading-8 text-slate-300">{isNewYork ? "When you're ready to start planning, explore available flights to New York City with FlightDealsNow. Compare your options and find an itinerary that works for your trip." : `When you are ready to plan travel to ${name}, share your dates and preferences with FlightDealsNow. Current flight options and fares need to be checked.`}</p>
 
-                    <p className="mt-7 text-xl font-black text-cyan-300">
-                        The city is waiting. Where will you go first?
-                    </p>
+                    <p className="mt-7 text-xl font-black text-cyan-300">{isNewYork ? "The city is waiting. Where will you go first?" : `Ready to plan your trip to ${name}?`}</p>
 
                     <a
                         href="/#flight-search"

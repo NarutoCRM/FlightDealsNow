@@ -1,5 +1,6 @@
 import { useState } from "react"
 import SEO from "./SEO";
+import { useNavigate } from "react-router-dom";
 
 
 const PHONE = "+1-888-348-7083"
@@ -8,6 +9,7 @@ const EMAIL = "support@flightdealsnow.com"
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL  ;
 
 export default function ContactUs() {
+    const navigate = useNavigate();
 
     const [status, setStatus] = useState("");
     const [sending, setSending] = useState(false);
@@ -60,7 +62,7 @@ export default function ContactUs() {
                 );
             }
 
-            setStatus("success");
+            navigate("/thank-you");
 
             setForm({
                 name: "",
@@ -325,13 +327,6 @@ export default function ContactUs() {
                                         className="w-full resize-none rounded-2xl border border-slate-200 bg-slate-50 px-5 py-4 text-base text-slate-800 outline-none transition placeholder:text-slate-400 focus:border-cyan-400 focus:bg-white focus:ring-4 focus:ring-cyan-100"
                                     />
                                 </div>
-
-                                {status === "success" && (
-                                    <div className="rounded-2xl bg-emerald-50 p-4 text-sm font-bold text-emerald-700">
-                                        ✓ Your message has been sent successfully. Our support team will
-                                        contact you shortly.
-                                    </div>
-                                )}
 
                                 {status && status !== "success" && (
                                     <div className="rounded-2xl bg-red-50 p-4 text-sm font-bold text-red-600">

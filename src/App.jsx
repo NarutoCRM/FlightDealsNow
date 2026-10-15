@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -23,12 +23,14 @@ import CookiePolicy from "./components/CookiePolicy";
 import Disclaimer from "./components/Disclaimer";
 
 import CheapFlightsNewYork from "./components/CheapFlightsNewYork";
+import { destinationFromPath } from "./components/destinationContent";
 import CheapFlightsLosAngeles from "./components/CheapFlightsLosAngeles";
 import CheapFlightsParis from "./components/CheapFlightsParis";
 import CheapFlightsSanFrancisco from "./components/CheapFlightsSanFrancisco";
 import CheapFlightsBoston from "./components/CheapFlightsBoston";
 import ContactUs from "./components/ContactUs";
 import FlightQuote from "./components/FlightQuote";
+import ThankYou from "./components/ThankYou";
 
 import UnitedAirlines from "./components/UnitedAirlines";
 import DeltaAirLines from "./components/DeltaAirLines";
@@ -80,6 +82,16 @@ function Home() {
       <CTA />
     </Layout>
   );
+}
+
+function DynamicDestination() {
+  const { destinationPath } = useParams();
+  const destination = destinationFromPath(destinationPath);
+  return destination ? (
+    <Layout>
+      <CheapFlightsNewYork key={destination.path} destination={destination} />
+    </Layout>
+  ) : <Home />;
 }
 
 function App() {
@@ -267,7 +279,7 @@ function App() {
           element={
             <Layout>
               {" "}
-              <CheapFlightsNewYork />{" "}
+              <CheapFlightsNewYork destination={destinationFromPath("cheap-flights-to-new-york-city")} />{" "}
             </Layout>
           }
         />
@@ -311,6 +323,15 @@ function App() {
         />
 
         <Route
+          path="/thank-you"
+          element={
+            <Layout>
+              <ThankYou />
+            </Layout>
+          }
+        />
+
+        <Route
           path="/cheap-flights-to-san-francisco"
           element={
             <Layout>
@@ -329,6 +350,8 @@ function App() {
             </Layout>
           }
         />
+
+        <Route path="/:destinationPath" element={<DynamicDestination />} />
 
         {/* FALLBACK */}
         <Route path="*" element={<Home />} />

@@ -10,11 +10,7 @@ const EMAIL = "support@flightdealsnow.com"
 const Section = ({ number, title, children }) => (
 
     <section className="mb-12">
-        <SEO
-            title="Cookie Policy | FlightsDealNow"
-            description="Learn how FlightsDealNow uses cookies and similar technologies to support website functionality, analytics, and user experience."
-            path="/cookie-policy"
-        />
+        
         <div className="mb-5 flex items-start gap-4">
             <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[#071a33] text-sm font-bold text-cyan-300">
                 {number}
@@ -45,7 +41,12 @@ const BulletList = ({ items }) => (
 function CookiePolicy() {
     return (
         <main className="min-h-screen bg-[#f7fafc]">
-
+            <SEO
+            title="Cookie Policy | FlightsDealNow"
+            description="Learn how FlightsDealNow uses cookies and similar technologies to support website functionality, analytics, and user experience."
+            path="/cookie-policy"
+        />
+        
             {/* ================= HERO ================= */}
             <section className="relative overflow-hidden bg-[#071a33]">
 

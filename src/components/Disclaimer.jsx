@@ -9,11 +9,7 @@ const DISPLAY_PHONE = "+1-888-348-7083"
 const Section = ({ number, title, children }) => (
 
   <section className="mb-10">
-    <SEO
-      title="Disclaimer | FlightsDealNow"
-      description="Read the FlightsDealNow disclaimer regarding flight information, travel services, airline references, pricing, availability, and third-party providers."
-      path="/disclaimer"
-    />
+    
     <h2 className="mb-4 text-xl font-bold text-slate-900 sm:text-2xl">
       {number}. {title}
     </h2>
@@ -35,6 +31,11 @@ const BulletList = ({ items }) => (
 function Disclaimer() {
   return (
     <main className="min-h-screen bg-slate-50">
+      <SEO
+      title="Disclaimer | FlightsDealNow"
+      description="Read the FlightsDealNow disclaimer regarding flight information, travel services, airline references, pricing, availability, and third-party providers."
+      path="/disclaimer"
+    />
       {/* Hero */}
       <section className="relative overflow-hidden bg-slate-950 py-20 sm:py-24">
         <div
