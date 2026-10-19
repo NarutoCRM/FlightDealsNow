@@ -1,6 +1,6 @@
 import { useState } from "react"
 import SEO from "./SEO";
-
+import FlightSearch from "./FlightSearch"
 
 const faqs = [
     {
@@ -90,7 +90,7 @@ export default function CheapFlightsBoston() {
 
                 <div className="absolute -right-32 bottom-0 h-96 w-96 rounded-full bg-blue-500/10 blur-3xl" />
 
-                <div className="relative mx-auto flex min-h-[560px] max-w-7xl items-center px-5 py-20 sm:px-6 lg:px-8">
+                <div className="relative mx-auto grid gap-12 lg:grid-cols-[.95fr_1.05fr] min-h-[560px] max-w-7xl items-center px-5 py-20 sm:px-6 lg:px-8 mt-10 ">
 
                     <div className="max-w-3xl">
 
@@ -115,7 +115,7 @@ export default function CheapFlightsBoston() {
                         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
 
                             <a
-                                href="/#flight-search"
+                                href="#flight-search"
                                 className="inline-flex items-center justify-center gap-2 rounded-xl bg-cyan-300 px-7 py-3.5 text-sm font-extrabold text-[#071a33] shadow-lg shadow-cyan-300/10 transition-all duration-300 hover:-translate-y-1 hover:bg-cyan-200"
                             >
                                 ✈ Search Boston Flights
@@ -131,6 +131,7 @@ export default function CheapFlightsBoston() {
                         </div>
 
                     </div>
+                    <FlightSearch key="Boston" destination="Boston" className="mt-0 w-full min-w-0" />
                 </div>
             </section>
 
@@ -322,7 +323,7 @@ export default function CheapFlightsBoston() {
                             </p>
 
                             <a
-                                href="/#flight-search"
+                                href="#flight-search"
                                 className="mt-6 inline-flex items-center gap-2 rounded-xl bg-[#071a33] px-6 py-3.5 text-sm font-bold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-blue-700"
                             >
                                 Search Available Flights →
@@ -626,7 +627,7 @@ export default function CheapFlightsBoston() {
                     </p>
 
                     <a
-                        href="/#flight-search"
+                        href="#flight-search"
                         className="mt-8 inline-flex items-center gap-2 rounded-xl bg-cyan-300 px-7 py-3.5 text-sm font-extrabold text-[#071a33] shadow-lg shadow-cyan-300/10 transition-all duration-300 hover:-translate-y-1 hover:bg-cyan-200"
                     >
                         ✈ Explore Boston Flights

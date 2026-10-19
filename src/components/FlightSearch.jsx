@@ -29,11 +29,11 @@ function AirportInput({ label, value, onChange, exclude }) {
   </div>
 }
 
-export default function FlightSearch() {
+export default function FlightSearch({ destination = "", className = "-mt-20" }) {
   const navigate = useNavigate()
   const [tripType, setTripType] = useState("Round Trip")
   const [from, setFrom] = useState("")
-  const [to, setTo] = useState("")
+  const [to, setTo] = useState(destination)
   const [departure, setDeparture] = useState("")
   const [returnDate, setReturnDate] = useState("")
   const [travelers, setTravelers] = useState(1)
@@ -85,7 +85,7 @@ export default function FlightSearch() {
   }, 2000);
 };
 
-  return <section id="flight-search" className="opacity-90 relative mx-auto -mt-20 max-w-6xl px-5 lg:px-8">
+  return <section id="flight-search" className={`opacity-90 relative mx-auto max-w-6xl px-5 lg:px-8 ${className}`}>
     <form onSubmit={submit} className="rounded-[28px] border border-white/60 bg-white/95 p-5 shadow-[0_25px_70px_-30px_rgba(15,23,42,.45)] backdrop-blur-xl sm:p-7">
       <div className="mb-6 flex flex-wrap items-center gap-2">
         {["Round Trip", "One Way"].map(t => <button type="button" key={t} onClick={() => setTripType(t)} className={`rounded-full px-5 py-2 text-xs font-bold transition ${tripType === t ? "bg-slate-950 text-white" : "bg-slate-100 text-slate-600 hover:bg-slate-200"}`}>{t}</button>)}

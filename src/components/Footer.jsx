@@ -1,5 +1,4 @@
 const PHONE = "+1-888-348-7083"
-import FloatingCall from "./FloatingCall";
 import TrustpilotButton from "./TrustpilotButton";
 
 
@@ -129,7 +128,6 @@ export default function Footer() {
           </div>
         </div>
 
-        <FloatingCall />
         {/* Payment Methods */}
         <div className="mt-8 border-t border-white/10 pt-6">
           <div className="flex flex-wrap items-center gap-4">
@@ -215,7 +213,7 @@ export default function Footer() {
             </a>
             <a
               href="/sitemap.xml"
-              className="text-sm text-white/60 transition hover:text-cyan-300"
+              className="hover:text-white"
             >
               Sitemap
             </a>

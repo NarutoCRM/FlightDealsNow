@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import FloatingCall from "./components/FloatingCall";
-import CallPopup from "./components/CallPopup";
 
 import Hero from "./components/Hero";
 import FlightDeals from "./components/FlightDeals";
@@ -37,6 +36,7 @@ import DeltaAirLines from "./components/DeltaAirLines";
 import SouthwestAirlines from "./components/SouthwestAirlines";
 import AmericanAirlines from "./components/AmericanAirlines";
 import AlaskaAirlines from "./components/AlaskaAirlines";
+import DynamicAirline from "./components/DynamicAirline";
 import JetBlueAirways from "./components/JetBlueAirways";
 import SpiritAirlines from "./components/SpiritAirlines";
 import FrontierAirlines from "./components/FrontierAirlines";
@@ -54,12 +54,7 @@ function Layout({ children, floating = true }) {
       <main>{children}</main>
       <Footer />
       <CookieConsent />
-      {floating && (
-        <>
-          <FloatingCall />
-          <CallPopup />
-        </>
-      )}
+      {floating && <FloatingCall />}
     </div>
   );
 }
@@ -351,6 +346,7 @@ function App() {
           }
         />
 
+        <Route path="/airlines/:airlineSlug" element={<Layout><DynamicAirline /></Layout>} />
         <Route path="/:destinationPath" element={<DynamicDestination />} />
 
         {/* FALLBACK */}

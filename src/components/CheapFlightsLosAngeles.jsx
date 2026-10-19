@@ -1,3 +1,4 @@
+import FlightSearch from "./FlightSearch";
 import { useState } from "react"
 import SEO from "./SEO";
 
@@ -102,7 +103,7 @@ export default function CheapFlightsLasVegas() {
                 <div className="absolute -right-32 top-20 h-80 w-80 rounded-full bg-cyan-300/20 blur-3xl" />
                 <div className="absolute -left-32 bottom-0 h-80 w-80 rounded-full bg-blue-500/20 blur-3xl" />
 
-                <div className="relative mx-auto flex min-h-[620px] max-w-7xl items-center px-5 py-20 sm:px-6 lg:px-8">
+                <div className="relative mx-auto grid gap-12 lg:grid-cols-[.95fr_1.05fr] min-h-[620px] max-w-7xl items-center px-5 py-20 sm:px-6 lg:px-8">
 
                     <div className="max-w-3xl">
 
@@ -127,7 +128,7 @@ export default function CheapFlightsLasVegas() {
                         <div className="mt-9 flex flex-col gap-3 sm:flex-row">
 
                             <a
-                                href="/#flight-search"
+                                href="#flight-search"
                                 className="inline-flex items-center justify-center rounded-2xl bg-cyan-300 px-7 py-4 font-extrabold text-[#071a33] shadow-xl shadow-cyan-300/10 transition hover:-translate-y-1 hover:bg-cyan-200"
                             >
                                 Search Flights
@@ -144,6 +145,7 @@ export default function CheapFlightsLasVegas() {
                         </div>
 
                     </div>
+                    <FlightSearch destination="Los Angeles" className="mt-0 w-full min-w-0" />
                 </div>
             </div>
 
@@ -300,7 +302,7 @@ export default function CheapFlightsLasVegas() {
                             </p>
 
                             <a
-                                href="/#flight-search"
+                                href="#flight-search"
                                 className="mt-8 inline-flex rounded-2xl bg-[#071a33] px-6 py-3.5 font-bold text-white transition hover:bg-blue-700"
                             >
                                 Start Your Search →
@@ -482,7 +484,7 @@ export default function CheapFlightsLasVegas() {
                             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
 
                                 <a
-                                    href="/#flight-search"
+                                    href="#flight-search"
                                     className="rounded-2xl bg-cyan-300 px-7 py-4 font-black text-[#071a33] transition hover:bg-cyan-200"
                                 >
                                     Search Flights →

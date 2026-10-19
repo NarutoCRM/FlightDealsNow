@@ -1,16 +1,17 @@
 import { useEffect, useRef, useState } from "react";
 
-const PHONE_NUMBER = "+1-888-348-7083";
+export const PHONE_NUMBER = "+1-888-348-7083";
 const DISPLAY_PHONE = "+1-888-348-7083";
 
 const SHOW_AFTER = 20000;
 const AUTO_CLOSE_AFTER = 50000;
 
-const CallPopup = () => {
+const CallPopup = ({ openRequest = 0, triggerRef }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const showTimerRef = useRef(null);
   const hideTimerRef = useRef(null);
+  const closeRef = useRef(null);
 
   useEffect(() => {
     const startShowTimer = () => {
@@ -28,16 +29,25 @@ const CallPopup = () => {
       }, SHOW_AFTER);
     };
 
-    startShowTimer();
+    if (openRequest) {
+      setIsOpen(true);
+      hideTimerRef.current = setTimeout(() => {
+        setIsOpen(false);
+        startShowTimer();
+      }, AUTO_CLOSE_AFTER);
+    } else {
+      startShowTimer();
+    }
 
     return () => {
       clearTimeout(showTimerRef.current);
       clearTimeout(hideTimerRef.current);
     };
-  }, []);
+  }, [openRequest]);
 
   const handleClose = () => {
     setIsOpen(false);
+    if (openRequest) triggerRef?.current?.focus();
 
     clearTimeout(hideTimerRef.current);
     clearTimeout(showTimerRef.current);
@@ -51,12 +61,22 @@ const CallPopup = () => {
     }, SHOW_AFTER);
   };
 
+  useEffect(() => {
+    if (!isOpen) return;
+    if (openRequest) closeRef.current?.focus();
+    const onKeyDown = event => {
+      if (event.key === "Escape") closeRef.current?.click();
+    };
+    document.addEventListener("keydown", onKeyDown);
+    return () => document.removeEventListener("keydown", onKeyDown);
+  }, [isOpen, openRequest]);
+
   if (!isOpen) {
     return null;
   }
 
   return (
-    <div className=" fixed bottom-5 left-1/2 -translate-x-1/2 z-40 w-[calc(100%-24px)] max-w-[410px]">
+    <div role="dialog" aria-label="Call a travel expert" className=" fixed bottom-5 left-1/2 -translate-x-1/2 z-40 w-[calc(100%-24px)] max-w-[410px] max-h-[calc(100dvh-130px)] overflow-y-auto">
       <div className=" relative overflow-hidden rounded-[26px] border border-white/10 bg-[#071a33] shadow-2xl shadow-black/30">
         {/* ================= DECORATIVE GLOW ================= */}
         <div
@@ -70,6 +90,7 @@ const CallPopup = () => {
         <div className="relative border-b border-white/10 px-5 py-4">
           {/* Close */}
           <button
+            ref={closeRef}
             type="button"
             onClick={handleClose}
             aria-label="Close call popup"

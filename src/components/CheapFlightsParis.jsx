@@ -1,3 +1,4 @@
+import FlightSearch from "./FlightSearch";
 import { useState } from "react"
 import SEO from "./SEO";
 
@@ -126,7 +127,7 @@ function CheapFlightsParis() {
         <div className="absolute -right-32 top-10 h-96 w-96 rounded-full bg-cyan-300/20 blur-3xl" />
         <div className="absolute -left-32 bottom-0 h-96 w-96 rounded-full bg-blue-600/20 blur-3xl" />
 
-        <div className="relative mx-auto flex min-h-[640px] max-w-7xl items-center px-5 py-20 sm:px-6 lg:px-8">
+        <div className="relative mx-auto grid gap-12 lg:grid-cols-[.95fr_1.05fr] min-h-[640px] max-w-7xl items-center px-5 py-20 sm:px-6 lg:px-8">
 
           <div className="max-w-4xl">
 
@@ -154,7 +155,7 @@ function CheapFlightsParis() {
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
 
               <a
-                href="/#flight-search"
+                href="#flight-search"
                 className="inline-flex items-center justify-center rounded-2xl bg-cyan-300 px-7 py-4 font-black text-[#071a33] shadow-xl transition hover:-translate-y-1 hover:bg-cyan-200"
               >
                 Search Flights
@@ -186,6 +187,7 @@ function CheapFlightsParis() {
             </div>
 
           </div>
+          <FlightSearch destination="Paris" className="mt-0 w-full min-w-0" />
         </div>
       </section>
 
@@ -392,7 +394,7 @@ function CheapFlightsParis() {
             </div>
 
             <a
-              href="/#flight-search"
+              href="#flight-search"
               className="mt-8 inline-flex rounded-2xl bg-cyan-300 px-7 py-4 font-black text-[#071a33] transition hover:bg-cyan-200"
             >
               Explore Flights →
@@ -654,7 +656,7 @@ function CheapFlightsParis() {
           </p>
 
           <a
-            href="/#flight-search"
+            href="#flight-search"
             className="mt-8 inline-flex rounded-2xl bg-cyan-300 px-8 py-4 font-black text-[#071a33] transition hover:-translate-y-1 hover:bg-cyan-200"
           >
             Search Flights →

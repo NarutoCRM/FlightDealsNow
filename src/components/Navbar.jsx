@@ -17,7 +17,7 @@ export default function Navbar() {
           className="flex min-h-[44px] items-center justify-center gap-2 px-4 text-sm font-bold text-white"
         >
           <span className="text-cyan-300">☎</span>
-          <span>Call Us: +1-888-348-7083</span>
+           <span>Call Us: +1-888-348-7083</span>
         </a>
       </div>
       <header className="sticky top-[44px] md:top-0 z-50 border-b border-white/20 bg-white/10 opacity-90 backdrop-blur-xl">
